@@ -1,0 +1,48 @@
+# Keeps secrets and local build artefacts out of the build context.
+# Anything listed here can never end up in an image layer.
+
+# Dependencies — reinstalled inside the image from the lockfile
+node_modules
+npm-debug.log*
+yarn-error.log*
+
+# Secrets — injected at runtime by Compose, never baked in
+.env
+.env.*
+!.env.example
+
+# Build output — recompiled by the builder stage
+dist
+build
+coverage
+*.tsbuildinfo
+
+# VCS and CI
+.git
+.gitignore
+.github
+
+# Tests and local tooling
+test
+**/*.spec.ts
+.eslintrc.js
+.prettierrc
+
+# Runtime data — mounted as a Docker volume instead of copied
+uploads
+
+# The Python microservice has its own build context and Dockerfile
+ai-service
+
+# Editor / OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.log
+tmp
+temp
+
+# Docker files themselves
+Dockerfile
+.dockerignore

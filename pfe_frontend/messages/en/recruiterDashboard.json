@@ -1,0 +1,639 @@
+{
+  "recruiterDashboard": {
+    "overview": {
+      "heading": "Recruitment Dashboard",
+      "subtitle": "Real-time analytics, job postings management, and AI applicant matching.",
+      "postNewJob": "Post New Job",
+      "candidateFallbackName": "Candidate",
+      "stats": {
+        "activeJobs": "Active Jobs",
+        "totalCount": "{count} total",
+        "jobOffersPosted": "job offers posted",
+        "totalApplicants": "Total Applicants",
+        "acrossPublished": "Across all published positions",
+        "totalViews": "Total Job Views",
+        "candidateViews": "Candidate views on job postings",
+        "aiCandidatesRanked": "AI Candidates Ranked",
+        "scoredByAi": "Scored by AI matching engine"
+      },
+      "topCandidates": {
+        "title": "Top AI-Matched Candidates",
+        "description": "Ranked by algorithms for your active postings",
+        "viewAll": "View all",
+        "loading": "Loading top candidates...",
+        "empty": {
+          "title": "No applicants yet",
+          "description": "When candidates apply for your jobs, they will appear here."
+        },
+        "appliedFor": "Applied for: {job}",
+        "matchPercent": "{percent}% Match",
+        "review": "Review"
+      },
+      "activeJobs": {
+        "title": "Active Job Postings",
+        "description": "Your currently open company positions",
+        "manage": "Manage",
+        "loading": "Loading job postings...",
+        "empty": {
+          "title": "No active job postings",
+          "description": "Create your first job offer to start receiving applications.",
+          "postJob": "Post a Job Now"
+        },
+        "views": "Views",
+        "applicants": "Applicants"
+      },
+      "pagination": {
+        "applicantsSummary": "Page {page} of {total} ({count} candidates)",
+        "jobsSummary": "Page {page} of {total} ({count} jobs)",
+        "prev": "Prev",
+        "next": "Next"
+      }
+    },
+    "applicants": {
+      "workspace": "Recruiter Workspace",
+      "heading": "Job Applications Received",
+      "subtitle": "Review, filter, and track applications submitted by candidates for your job listings.",
+      "subtitleWithJob": "Review every application submitted for the selected job offer.",
+      "unknownCandidate": "Unknown candidate",
+      "selectJob": {
+        "title": "Select a Job Offer",
+        "description": "To review candidate applications, please select a specific job posting from your active listings.",
+        "goToListings": "Go to Job Listings"
+      },
+      "loadError": {
+        "title": "Unable to Load Applicants",
+        "backToJobs": "Back to Jobs"
+      },
+      "jobSummary": {
+        "apps": "Apps",
+        "unknownCompany": "Unknown company"
+      },
+      "kpis": {
+        "totalCandidates": "Total Candidates",
+        "underReview": "Under Review",
+        "interviewStage": "Interview Stage",
+        "decisionsMade": "Decisions Made"
+      },
+      "table": {
+        "candidate": "Candidate",
+        "email": "Email",
+        "statusTransition": "Status Transition",
+        "appliedOn": "Applied on",
+        "aiMatch": "AI Match",
+        "cv": "CV",
+        "actions": "Actions",
+        "idPrefix": "ID: {id}..."
+      },
+      "empty": {
+        "title": "No applicants found",
+        "description": "We couldn't find any applicants matching your selected filters or search query.",
+        "resetFilters": "Reset filters and search"
+      },
+      "statusLabels": {
+        "pending": "PENDING",
+        "reviewed": "REVIEWED",
+        "shortlisted": "SHORTLISTED",
+        "interview": "INTERVIEW",
+        "accepted": "ACCEPTED",
+        "rejected": "REJECTED"
+      },
+      "aiMatch": {
+        "pending": "Pending",
+        "notEvaluated": "Not evaluated",
+        "runScoreTitle": "Run AI Match Score",
+        "insightsTitle": "AI Match Insights",
+        "breakdown": {
+          "requiredSkills": "Required Skills",
+          "projectsFit": "Projects Fit",
+          "experienceRelevance": "Experience Relevance",
+          "educationMatch": "Education Match",
+          "semanticSimilarity": "Semantic Similarity"
+        }
+      },
+      "cv": {
+        "openCv": "Open CV",
+        "noCvUploaded": "No CV Uploaded"
+      },
+      "actions": {
+        "rematch": "Rematch",
+        "viewDetails": "View Details",
+        "schedule": "Schedule"
+      },
+      "toast": {
+        "statusUpdated": "Applicant status successfully updated to {status}",
+        "statusUpdateFailed": "Failed to update status",
+        "matchRecalculated": "AI match score recalculated successfully!",
+        "matchRecalculateFailed": "Failed to recalculate match score"
+      }
+    },
+    "applicantDetail": {
+      "backToApplications": "Back to applications",
+      "heading": "Application Review",
+      "rematchCandidate": "Rematch Candidate",
+      "scheduleInterview": "Schedule Interview",
+      "viewAll": "View All",
+      "applicantProfile": "Applicant Profile",
+      "appliedForAt": "Applied for {job} at {company}",
+      "applicationId": "Application ID",
+      "unknownCompany": "Unknown company",
+      "recruiterFallback": "Recruiter",
+      "candidateFallback": "Candidate",
+      "statusLabels": {
+        "pending": "PENDING",
+        "reviewed": "REVIEWED",
+        "shortlisted": "SHORTLISTED",
+        "interview": "INTERVIEW",
+        "accepted": "ACCEPTED",
+        "rejected": "REJECTED",
+        "unknown": "UNKNOWN"
+      },
+      "timeline": {
+        "applied": "Applied",
+        "reviewed": "Reviewed",
+        "interview": "Interview",
+        "offer": "Offer"
+      },
+      "tabs": {
+        "aiInsights": "AI Insights",
+        "fullProfile": "Full Profile",
+        "documents": "Documents ({count})"
+      },
+      "aiInsights": {
+        "pendingTitle": "AI Matching Analysis Pending",
+        "pendingDescription": "No matching analysis has been generated for this application yet. Run the agent pipeline to calculate the ATS score and candidate insights.",
+        "runMatchScore": "Run AI Match Score",
+        "atsMatchRating": "ATS Match Rating",
+        "matchRatingBreakdown": "Match Rating Breakdown",
+        "notEvaluated": "Not evaluated",
+        "ruleBasedLabel": "Rule-based (ESCO+skills):",
+        "semanticLabel": "Semantic (AI embedding):",
+        "keyScoreDrivers": "Key Score Drivers",
+        "recommendationTitle": "AI Synthesized Candidate Recommendation",
+        "keyFitStrengths": "Key Fit Strengths",
+        "areasForReview": "Areas for Review",
+        "skillsMatchAnalysis": "Skills Match Analysis",
+        "matchedCoreSkills": "Matched Core Skills ({count})",
+        "noMatchedSkills": "No exact matching skills found in CV.",
+        "missingRequiredSkills": "Missing Required Skills ({count})",
+        "allSkillsMatching": "All required skills are matching!",
+        "defaultStrengths": {
+          "0": "Strong technical alignment with core required skills.",
+          "1": "Solid professional experience demonstrated in the CV.",
+          "2": "Clear and professional CV formatting."
+        },
+        "fallbackStrengths": {
+          "0": "Technical alignment validated.",
+          "1": "Academic background meets requirements."
+        },
+        "defaultGaps": {
+          "0": "Some secondary skills in job description could be discussed.",
+          "1": "Agile methodology details were not explicitly highlighted."
+        },
+        "noGaps": "No critical gaps identified.",
+        "defaultSummary": "The candidate presents a balanced and solid profile matching core requirements. Their experience adds valuable technical depth.",
+        "fallbackSummary": "AI analysis completed. Recommended for technical interview phase."
+      },
+      "scoreBreakdown": {
+        "requiredSkills": "Required Skills",
+        "projectsFit": "Projects Fit",
+        "experienceRelevance": "Experience Relevance",
+        "educationMatch": "Education Match",
+        "languageFit": "Language Fit",
+        "embeddingSimilarity": "Embedding Similarity",
+        "certificationsFit": "Certifications Fit"
+      },
+      "scoreComposition": {
+        "learnedRanker": "Learned ranker (LightGBM)",
+        "weightedRules": "Weighted rules + semantics"
+      },
+      "profile": {
+        "viewCompleteProfile": "View Complete Candidate Profile",
+        "viewCompleteProfileDescription": "Explore full work history, education, skills, languages, projects, and certifications.",
+        "openProfile": "Open Profile",
+        "contactDetails": "Contact Details",
+        "notProvided": "Not provided",
+        "candidateOverview": "Candidate Overview",
+        "candidateOverviewDescription": "This overview profiles metadata attached directly to the applicant's account. Recruiter remarks and contact points should be updated in status card.",
+        "professionalSummary": "Professional Summary",
+        "noSummary": "No summary description submitted.",
+        "expertiseSkillsTags": "Expertise & Skills Tags",
+        "noSkillsListed": "No specific skills listed."
+      },
+      "documents": {
+        "cvFallbackName": "CV.pdf",
+        "coverLetterFallbackName": "Cover_Letter.pdf",
+        "supportingFallbackName": "Supporting document {index}",
+        "viewFile": "View File",
+        "downloadFile": "Download File",
+        "fileUnavailable": "File unavailable",
+        "noFiles": "No files submitted for this candidate."
+      },
+      "coverLetterTitle": "Candidate Cover Letter",
+      "notFound": {
+        "title": "Application Not Found",
+        "description": "The requested application could not be loaded, or you are not authorized to view it.",
+        "returnToApplications": "Return to Applications"
+      },
+      "sidebar": {
+        "statusTransition": "Status Transition",
+        "statusTransitionDescription": "Adjust the candidate's state inside the recruitment pipeline.",
+        "selectNewStatus": "Select new status",
+        "saveStatusUpdate": "Save Status Update",
+        "candidateContact": "Candidate Contact",
+        "noEmail": "No email",
+        "contactCandidate": "Contact Candidate",
+        "jobOfferDetails": "Job Offer Details",
+        "appliedOn": "Applied on {date}",
+        "fullTime": "Full-time",
+        "assignedRecruiter": "Assigned Recruiter",
+        "emailRecruiter": "Email Recruiter",
+        "noRecruiterAssigned": "No recruiter currently assigned."
+      },
+      "toast": {
+        "matchRecalculated": "AI match score recalculated successfully!",
+        "matchRecalculateFailed": "Failed to recalculate match score",
+        "statusUpdated": "Application status updated successfully",
+        "somethingWentWrong": "Something went wrong"
+      }
+    },
+    "candidateProfile": {
+      "loadError": "Unable to load candidate profile details.",
+      "profileNotFound": "Candidate profile not found.",
+      "back": "Back",
+      "candidateFallback": "Candidate",
+      "candidateProfileLabel": "Candidate Profile",
+      "personalInformation": "Personal Information",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "professionalSummary": "Professional Summary",
+      "noSummary": "No summary added yet.",
+      "careerPreferences": "Career Preferences",
+      "openToWork": "Open to Work",
+      "yes": "Yes",
+      "no": "No",
+      "desiredPosition": "Desired Position",
+      "desiredSalary": "Desired Salary",
+      "socialLinks": "Social Links",
+      "noSocialLinks": "No social links added.",
+      "present": "Present",
+      "positionFallback": "Position",
+      "projectFallback": "Project",
+      "certificationFallback": "Certification",
+      "levels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "expert": "Expert",
+        "native": "Native"
+      },
+      "socialLabels": {
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "twitter": "Twitter",
+        "portfolio": "Portfolio"
+      },
+      "sections": {
+        "experience": "Experience",
+        "education": "Education",
+        "skills": "Skills",
+        "languages": "Languages",
+        "projects": "Projects",
+        "certifications": "Certifications"
+      },
+      "empty": {
+        "experiences": "No experiences added.",
+        "education": "No education added.",
+        "skills": "No skills added.",
+        "languages": "No languages added.",
+        "projects": "No projects added.",
+        "certifications": "No certifications added."
+      },
+      "educationFieldOf": "in {field}",
+      "issueDate": "Issue date: {date}",
+      "viewCertificate": "View certificate document"
+    },
+    "interviews": {
+      "workspaceBadge": "Recruiter Workspace",
+      "title": "Interviews",
+      "subtitle": "Monitor all your active interview rounds, review schedule details, evaluate candidates, and easily organize new recruitment sessions.",
+      "viewJobs": "View Jobs",
+      "activeFilters": "Active Filters:",
+      "jobFilterLabel": "Job:",
+      "candidateFilterLabel": "Candidate:",
+      "removeJobFilter": "Remove Job filter",
+      "removeCandidateFilter": "Remove Candidate filter",
+      "clearAll": "Clear all",
+      "selectedJobOffer": "Selected Job Offer",
+      "selectedCandidate": "Selected Candidate",
+      "stats": {
+        "total": "Total interviews",
+        "matchingFilters": "Matching active filters",
+        "scheduledAcrossJobs": "Scheduled across your jobs",
+        "upcoming": "Upcoming",
+        "pendingEvaluations": "Pending evaluations",
+        "completed": "Completed",
+        "assessedArchived": "Assessed & archived"
+      },
+      "emptyState": {
+        "filteredTitle": "No interviews match the selected filters",
+        "defaultTitle": "No interviews scheduled yet",
+        "filteredDescription": "Try adjusting your job offer or candidate filters, or clear them to view all scheduled interviews.",
+        "defaultDescription": "Begin setting up evaluation rounds by scheduling a new interview from a candidate's application profile.",
+        "clearFilters": "Clear Filters",
+        "scheduleInterview": "Schedule Interview"
+      },
+      "reviewDetails": "Review Details"
+    },
+    "interviewDetail": {
+      "workspaceBadge": "Recruiter Workspace",
+      "heading": "Interview Management",
+      "backToInterviews": "Back to Interviews",
+      "invalidLink": "Invalid interview link.",
+      "notFound": "Interview record not found.",
+      "statusLabel": "Status: {status}",
+      "defaultCancelNote": "Cancelled by recruiter. Please contact candidate for follow-up.",
+      "defaultCandidateName": "Candidate",
+      "defaultProfessionalSummary": "An experienced software engineering candidate with specialized competencies in web technologies, robust architectures, and product design.",
+      "toast": {
+        "updated": "Interview updated successfully",
+        "markedCompleted": "Interview marked as completed",
+        "cancelled": "Interview cancelled",
+        "deleted": "Interview deleted"
+      },
+      "rescheduleSection": {
+        "title": "Reschedule & Edit Session",
+        "description": "Modify the title, date, time slot, duration, or communication note of this scheduled round."
+      },
+      "statusPanel": {
+        "title": "Status Control Panel",
+        "description": "Transition the candidate through states or delete this record from the database.",
+        "completedNotice": "Evaluations locked. This interview is finalized. Additional updates are stored under audit logs.",
+        "cancelledNotice": "Interview Cancelled. You can use the form above to choose a new slot and restore the interview.",
+        "markCompleted": "Mark Completed",
+        "cancelInterview": "Cancel Interview",
+        "deleteInterview": "Delete Interview"
+      },
+      "statusBanner": {
+        "scheduled": {
+          "label": "Scheduled",
+          "description": "This recruitment session is currently active and scheduled as planned. All preparations are set."
+        },
+        "rescheduled": {
+          "label": "Rescheduled",
+          "description": "This recruitment session has been rescheduled to a new time. Notifications have been dispatched."
+        },
+        "completed": {
+          "label": "Completed",
+          "description": "This interview round is marked as completed. The candidate's evaluations are secured and locked."
+        },
+        "cancelled": {
+          "label": "Cancelled",
+          "description": "This recruitment round has been cancelled. You may schedule a new one or reactivate this if needed."
+        }
+      }
+    },
+    "interviewSchedule": {
+      "workspaceBadge": "Recruiter Workspace",
+      "heading": "Schedule Interview",
+      "subtitle": "Configure parameters, select time options, and dispatch invite emails automatically.",
+      "backToApplication": "Back to Application",
+      "browseApplications": "Browse Applications",
+      "defaultCandidateName": "Candidate",
+      "defaultProfessionalSummary": "No professional summary provided. Review resume documents to verify competencies and candidate biography details.",
+      "missingContext": {
+        "title": "Missing Application Context",
+        "description": "To schedule an interview, please access this scheduler directly from an applicant review sheet or vacancy pipeline."
+      },
+      "notFound": {
+        "title": "Application Not Found",
+        "description": "The candidate's application details could not be resolved. Please verify the URL parameters or try again."
+      },
+      "form": {
+        "title": "New Session Parameters",
+        "description": "Enter meeting parameters, select date slots, check calendar conflicts, and prepare notifications."
+      },
+      "toast": {
+        "missingInfo": "Candidate or job offer information is missing",
+        "missingInterviewId": "Interview scheduled, but no interview ID was returned.",
+        "scheduled": "Interview scheduled successfully"
+      }
+    },
+    "jobs": {
+      "title": "Job Offers",
+      "subtitle": "Create, publish, and optimize your company hiring pipeline.",
+      "refresh": "Refresh",
+      "newJobOffer": "New Job Offer",
+      "createJobOffer": "Create Job Offer",
+      "confirmDelete": "Delete this job offer? This action can be reverted only from database backups.",
+      "toasts": {
+        "closeSuccess": "Job offer closed.",
+        "closeError": "Could not close job offer.",
+        "deleteSuccess": "Job offer deleted.",
+        "deleteError": "Could not delete job offer."
+      },
+      "empty": {
+        "title": "No job offers found",
+        "subtitle": "Start by creating your first offer or adjusting filters."
+      },
+      "viewMode": {
+        "table": "Table",
+        "cards": "Cards"
+      },
+      "pageInfo": "Showing page {page} of {totalPages} ({total} jobs)",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "jobDetail": {
+      "notSpecified": "Not specified",
+      "employmentType": {
+        "FULL_TIME": "Full-time",
+        "PART_TIME": "Part-time",
+        "CONTRACT": "Contract",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "TEMPORARY": "Temporary",
+        "INTERNSHIP": "Internship",
+        "FREELANCE": "Freelance"
+      },
+      "workplaceType": {
+        "ONSITE": "On-site",
+        "HYBRID": "Hybrid",
+        "REMOTE": "Remote"
+      },
+      "experienceLevel": {
+        "ENTRY": "Entry Level",
+        "JUNIOR": "Junior",
+        "MID": "Mid Level",
+        "SENIOR": "Senior",
+        "LEAD": "Lead",
+        "EXECUTIVE": "Executive"
+      },
+      "status": {
+        "PUBLISHED": "Published",
+        "CLOSED": "Closed",
+        "DRAFT": "Draft"
+      },
+      "backToJobs": "Back to jobs",
+      "notFound": {
+        "title": "Job offer not found",
+        "description": "This job offer may have been deleted, archived, or is unavailable."
+      },
+      "urgent": "Urgent",
+      "featured": "Featured",
+      "postedOn": "Posted on {date}",
+      "publishDraft": {
+        "title": "Publish this draft",
+        "description": "Make this offer visible to candidate applications."
+      },
+      "stats": {
+        "totalViews": "Total Views",
+        "totalViewsHint": "Candidate views on details page",
+        "applications": "Applications",
+        "applicationsHint": "Total CVs submitted to date",
+        "attractionRate": "Attraction Rate",
+        "attractionRateHint": "Ratio of views to applications"
+      },
+      "aiCta": {
+        "title": "AI-Matched Top Candidates",
+        "description": "View the top 10 recommended candidates for this role, ranked by our AI engine"
+      },
+      "sections": {
+        "aboutRole": "About this role",
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "requiredSkills": "Required skills",
+        "preferredSkills": "Preferred skills",
+        "languages": "Languages",
+        "benefits": "Benefits",
+        "applicationDeadline": "Application Deadline"
+      },
+      "sidebar": {
+        "companyProfile": "Company Profile",
+        "companyLogoAlt": "Company logo",
+        "companySize": "Size: {size} employees",
+        "postedBy": "Posted By",
+        "recruiter": "Recruiter",
+        "keyDetails": "Key Details",
+        "salary": "Salary",
+        "contract": "Contract",
+        "workplace": "Workplace",
+        "experience": "Experience",
+        "openings": "Openings"
+      },
+      "openings": "{count, plural, one {# position} other {# positions}}"
+    },
+    "jobEdit": {
+      "loading": "Loading job offer...",
+      "notFound": "Job offer not found.",
+      "title": "Edit Job Offer",
+      "subtitle": "Modify and save your job offer."
+    },
+    "jobRecommendations": {
+      "backToJob": "Back to Job Details",
+      "title": "Top Candidates",
+      "for": "For:",
+      "sort": {
+        "score": "Overall Score",
+        "skills": "Skills Match",
+        "experience": "Experience Fit",
+        "semantic": "Profile Match"
+      },
+      "computing": "Computing…",
+      "refresh": "Refresh",
+      "requiredSkillsCount": "{count, plural, one {# required skill} other {# required skills}}",
+      "cachedResults": "Cached results",
+      "freshResults": "Fresh results",
+      "candidateCount": "{count, plural, one {# candidate} other {# candidates}}",
+      "computedAt": "Computed {date}",
+      "errors": {
+        "load": "Unable to load recommendations. Please try refreshing.",
+        "refresh": "Refresh failed. The AI service may be unavailable."
+      },
+      "loading": {
+        "title": "Searching for top candidates...",
+        "subtitle": "Our AI is analyzing candidate profiles against your job requirements"
+      },
+      "empty": {
+        "title": "No candidates found yet",
+        "description": "Make sure there are registered candidates on the platform. Click Refresh to run the AI matching pipeline.",
+        "cta": "Find Candidates"
+      }
+    },
+    "jobCreate": {
+      "title": "Create Job Offer",
+      "subtitle": "Use the wizard to draft, review, and publish your job offer."
+    },
+    "profile": {
+      "title": "My Profile",
+      "subtitle": "Review your recruiter information.",
+      "editProfile": "Edit Profile",
+      "errors": {
+        "loadFailed": "Unable to load recruiter profile data.",
+        "notFound": "No profile found."
+      },
+      "sections": {
+        "personalInfo": { "title": "Personal Information" },
+        "positionInfo": { "title": "Position Information" },
+        "companyInfo": { "title": "Company Information" }
+      },
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "position": "Position",
+        "department": "Department",
+        "companyName": "Company Name",
+        "industry": "Industry",
+        "companySize": "Company Size",
+        "description": "Description"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your recruiter account and preferences from one place.",
+      "sections": {
+        "account": {
+          "title": "Account",
+          "editProfile": {
+            "title": "Edit Profile",
+            "description": "Update your recruiter profile and company information.",
+            "action": "Go to profile"
+          },
+          "changePassword": {
+            "title": "Change Password",
+            "description": "Use a strong password and update it regularly.",
+            "action": "Change Password"
+          }
+        },
+        "notifications": {
+          "title": "Notifications",
+          "instantAlerts": {
+            "title": "New Applicant Alerts",
+            "description": "Get notified instantly when candidates apply to your jobs.",
+            "toggleAriaLabel": "Toggle applicant alerts"
+          },
+          "weeklyDigest": {
+            "title": "Weekly Performance Summary",
+            "description": "Receive a weekly digest about listing views and applicant trends.",
+            "toggleAriaLabel": "Toggle weekly digest"
+          }
+        },
+        "privacy": {
+          "title": "Privacy",
+          "companyVisibility": {
+            "title": "Company Profile Visibility",
+            "description": "Control whether your company profile appears publicly in search.",
+            "toggleAriaLabel": "Toggle company profile visibility"
+          }
+        },
+        "other": {
+          "title": "Other Settings",
+          "description": "More recruiter preferences will be available here as new features are released."
+        }
+      }
+    }
+  }
+}

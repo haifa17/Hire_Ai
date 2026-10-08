@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "jobs": "Jobs",
+    "cvTemplates": "CV Templates",
+    "about": "About",
+    "pricing": "Pricing",
+    "dashboard": "Dashboard",
+    "logIn": "Log In",
+    "logOut": "Log out",
+    "getStarted": "Get Started"
+  },
+  "footer": {},
+  "common": {}
+}

@@ -1,0 +1,71 @@
+{
+  "offerMatch": {
+    "title": "Match an offer",
+    "subtitle": "See how well your profile fits a job before you apply — whether it's posted here or somewhere else.",
+    "tabs": {
+      "platform": "Offer on TalentBridge",
+      "external": "Offer from elsewhere"
+    },
+    "platform": {
+      "searchLabel": "Search published offers",
+      "searchPlaceholder": "Job title, skill or company…",
+      "loading": "Loading offers…",
+      "empty": "No published offer matches your search.",
+      "loadError": "Could not load offers. Please try again.",
+      "selected": "Selected offer",
+      "change": "Change",
+      "unknownCompany": "Company not specified"
+    },
+    "external": {
+      "hint": "Paste an offer from LinkedIn, a company website or any job board. The AI reads the text and extracts the requirements.",
+      "titleLabel": "Job title",
+      "titlePlaceholder": "e.g. Senior Frontend Engineer",
+      "companyLabel": "Company",
+      "locationLabel": "Location",
+      "optional": "optional",
+      "descriptionLabel": "Full offer text",
+      "descriptionPlaceholder": "Paste the job description, responsibilities and requirements here…",
+      "characters": "{count, plural, one {# character} other {# characters}}",
+      "minimum": "At least {min} characters"
+    },
+    "submit": "Analyse my match",
+    "analysing": "Analysing your match…",
+    "analysingHint": "Comparing your profile with the offer. This can take up to a minute.",
+    "error": {
+      "fallback": "The analysis failed. Please try again in a moment."
+    },
+    "result": {
+      "heading": "Your match",
+      "for": "for {title}",
+      "at": "at {company}",
+      "verdict": {
+        "strong": "Strong match — worth applying.",
+        "good": "Good match — a few gaps to address.",
+        "weak": "Weak match — significant gaps."
+      },
+      "noScore": "The overall score could not be computed for this offer.",
+      "breakdown": "Score breakdown",
+      "notEvaluated": "Not evaluated",
+      "notEvaluatedHint": "Not enough information in the offer or your profile to score this criterion.",
+      "criteria": {
+        "skills": "Skills",
+        "experience": "Experience",
+        "semantic": "Overall fit",
+        "education": "Education",
+        "projects": "Projects",
+        "languages": "Languages",
+        "certifications": "Certifications"
+      },
+      "matchedSkills": "Skills you have",
+      "missingSkills": "Skills to develop",
+      "strengths": "Strengths",
+      "gaps": "Gaps",
+      "summary": "Summary",
+      "apply": "Apply to this offer",
+      "viewOffer": "View offer",
+      "tailorCv": "Tailor a CV for this role",
+      "newMatch": "Match another offer",
+      "placeholder": "Pick an offer or paste one, then run the analysis to see your score, the skills you match and the gaps to close."
+    }
+  }
+}

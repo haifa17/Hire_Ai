@@ -1,0 +1,71 @@
+{
+  "offerMatch": {
+    "title": "Analyser une offre",
+    "subtitle": "Mesurez l'adéquation de votre profil avec une offre avant de postuler, qu'elle soit publiée ici ou ailleurs.",
+    "tabs": {
+      "platform": "Offre sur TalentBridge",
+      "external": "Offre externe"
+    },
+    "platform": {
+      "searchLabel": "Rechercher parmi les offres publiées",
+      "searchPlaceholder": "Intitulé, compétence ou entreprise…",
+      "loading": "Chargement des offres…",
+      "empty": "Aucune offre publiée ne correspond à votre recherche.",
+      "loadError": "Impossible de charger les offres. Veuillez réessayer.",
+      "selected": "Offre sélectionnée",
+      "change": "Changer",
+      "unknownCompany": "Entreprise non précisée"
+    },
+    "external": {
+      "hint": "Collez une offre trouvée sur LinkedIn, le site d'une entreprise ou un autre site d'emploi. L'IA lit le texte et en extrait les exigences.",
+      "titleLabel": "Intitulé du poste",
+      "titlePlaceholder": "ex. Ingénieur Frontend Senior",
+      "companyLabel": "Entreprise",
+      "locationLabel": "Lieu",
+      "optional": "facultatif",
+      "descriptionLabel": "Texte complet de l'offre",
+      "descriptionPlaceholder": "Collez ici la description du poste, les missions et les exigences…",
+      "characters": "{count, plural, one {# caractère} other {# caractères}}",
+      "minimum": "Au moins {min} caractères"
+    },
+    "submit": "Analyser mon adéquation",
+    "analysing": "Analyse en cours…",
+    "analysingHint": "Comparaison de votre profil avec l'offre. Cela peut prendre jusqu'à une minute.",
+    "error": {
+      "fallback": "L'analyse a échoué. Veuillez réessayer dans un instant."
+    },
+    "result": {
+      "heading": "Votre adéquation",
+      "for": "pour {title}",
+      "at": "chez {company}",
+      "verdict": {
+        "strong": "Très bonne adéquation — la candidature vaut le coup.",
+        "good": "Bonne adéquation — quelques écarts à combler.",
+        "weak": "Adéquation faible — des écarts importants."
+      },
+      "noScore": "Le score global n'a pas pu être calculé pour cette offre.",
+      "breakdown": "Détail du score",
+      "notEvaluated": "Non évalué",
+      "notEvaluatedHint": "Pas assez d'informations dans l'offre ou votre profil pour évaluer ce critère.",
+      "criteria": {
+        "skills": "Compétences",
+        "experience": "Expérience",
+        "semantic": "Adéquation globale",
+        "education": "Formation",
+        "projects": "Projets",
+        "languages": "Langues",
+        "certifications": "Certifications"
+      },
+      "matchedSkills": "Compétences acquises",
+      "missingSkills": "Compétences à développer",
+      "strengths": "Points forts",
+      "gaps": "Points à améliorer",
+      "summary": "Synthèse",
+      "apply": "Postuler à cette offre",
+      "viewOffer": "Voir l'offre",
+      "tailorCv": "Adapter un CV à ce poste",
+      "newMatch": "Analyser une autre offre",
+      "placeholder": "Choisissez ou collez une offre, puis lancez l'analyse pour voir votre score, les compétences qui correspondent et les écarts à combler."
+    }
+  }
+}

@@ -1,0 +1,69 @@
+name: AI Service CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    name: Lint & test
+    runs-on: ubuntu-latest
+
+    env:
+      AI_PROVIDER: groq
+      GROQ_API_KEY: test-key
+      GROQ_MODEL: llama-3.3-70b-versatile
+      GROQ_URL: https://api.groq.com/openai/v1/chat/completions
+      GROQ_TIMEOUT_SECONDS: 120
+      NVIDIA_NIM_API_KEY: ""
+      NVIDIA_NIM_MODEL: nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
+      NVIDIA_NIM_URL: https://integrate.api.nvidia.com/v1/chat/completions
+      NVIDIA_NIM_TIMEOUT_SECONDS: 120
+      OPENROUTER_API_KEY: ""
+      OPENROUTER_MODEL: gpt-oss-20b
+      OPENROUTER_URL: https://openrouter.ai/api/v1/chat/completions
+      OPENROUTER_TIMEOUT_SECONDS: 120
+      OLLAMA_URL: http://localhost:11434/api/generate
+      OLLAMA_MODEL: llama3.1:8b
+      OLLAMA_TIMEOUT_SECONDS: 300
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/talentbridge_ai_test
+      QDRANT_URL: http://localhost:6333
+      REDIS_URL: redis://localhost:6379/0
+      LANGSMITH_TRACING: "false"
+      DEEPEVAL_TELEMETRY_OPT_OUT: "YES"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+
+      - name: Install CPU-only torch
+        run: |
+          pip install --only-binary :all: \
+            --index-url https://download.pytorch.org/whl/cpu \
+            torch==2.13.0
+
+      - name: Install dependencies
+        run: pip install --only-binary :all: -r requirements.txt ruff
+
+      - name: Lint
+        run: ruff check app main.py
+
+      - name: Unit tests
+        run: pytest --cov=app --cov-report=xml
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-service-coverage
+          path: coverage.xml
+          retention-days: 7

@@ -1,0 +1,91 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+defaults:
+  run:
+    working-directory: .
+
+jobs:
+  test:
+    name: Lint, build & test
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: talentbridge_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      NODE_ENV: test
+      PORT: 3000
+      FRONTEND_URL: http://localhost:3001
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/talentbridge_test?schema=public
+      JWT_ACCESS_SECRET: test-access-token-secret-min-64-chars-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      JWT_ACCESS_EXPIRATION: 15m
+      JWT_REFRESH_SECRET: test-refresh-token-secret-min-64-chars-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      JWT_REFRESH_EXPIRATION: 7d
+      MAIL_HOST: smtp.example.com
+      MAIL_PORT: 587
+      MAIL_USER: test@example.com
+      MAIL_PASS: test-password
+      MAIL_FROM: "Hire AI <noreply@hire-ai.com>"
+      PASSWORD_RESET_EXPIRATION_MINUTES: 30
+      EMAIL_VERIFICATION_EXPIRATION_HOURS: 24
+      THROTTLE_TTL: 60
+      THROTTLE_LIMIT: 10
+      AI_SERVICE_URL: http://localhost:8000
+      AI_SERVICE_TIMEOUT_MS: 300000
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client
+        run: npm run prisma:generate
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Run Prisma migrations
+        run: npm run prisma:migrate:deploy
+
+      - name: Unit tests
+        run: npm run test -- --ci --coverage
+
+      - name: Build
+        run: npm run build
+
+      - name: E2E tests
+        run: npm run test:e2e -- --ci
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: coverage
+          retention-days: 7

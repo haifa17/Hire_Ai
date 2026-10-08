@@ -1,0 +1,149 @@
+{
+  "publicJobs": {
+    "list": {
+      "hero": {
+        "badge": "Live Job Board",
+        "title": "Explore Opportunities"
+      },
+      "search": {
+        "titlePlaceholder": "Job title, skills, or company...",
+        "locationPlaceholder": "City, country, or remote...",
+        "button": "Search Jobs"
+      },
+      "filtersBar": {
+        "active": "Filtered search active",
+        "clear": "Clear Filters"
+      },
+      "sidebar": {
+        "title": "Filters",
+        "reset": "Reset",
+        "jobType": "Job Type",
+        "workModel": "Work Model"
+      },
+      "results": {
+        "showing": "Showing {shown} of {total} positions"
+      },
+      "sort": {
+        "label": "Sort:",
+        "newest": "Newest first",
+        "oldest": "Oldest first"
+      },
+      "error": {
+        "failedToLoad": "Failed to load job offers. Please try refreshing."
+      },
+      "empty": {
+        "title": "No matching job offers",
+        "description": "We couldn't find any published offers matching your criteria. Try adjusting your filters.",
+        "clearButton": "Clear Search Filters"
+      },
+      "job": {
+        "unknownCompany": "Unknown Company",
+        "locationSpecified": "Location specified",
+        "salaryNegotiable": "Salary negotiable",
+        "viewDetails": "View Details",
+        "applyNow": "Apply Now"
+      },
+      "pagination": {
+        "pageOf": "Page {page} of {total} ({count, plural, one {# total job} other {# total jobs}})",
+        "previous": "Previous",
+        "next": "Next"
+      },
+      "toast": {
+        "loginRequired": "Please log in to apply for this job."
+      },
+      "employmentType": {
+        "FULL_TIME": "Full-time",
+        "PART_TIME": "Part-time",
+        "CONTRACT": "Contract",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "INTERNSHIP": "Internship"
+      },
+      "workplaceType": {
+        "REMOTE": "Remote",
+        "HYBRID": "Hybrid",
+        "ONSITE": "On-site"
+      },
+      "time": {
+        "recently": "Recently",
+        "justNow": "Just now",
+        "hoursAgo": "{hours}h ago",
+        "daysAgo": "{days}d ago"
+      }
+    },
+    "detail": {
+      "back": {
+        "toJobs": "Back to jobs"
+      },
+      "badges": {
+        "urgent": "Urgent",
+        "featured": "Featured"
+      },
+      "hero": {
+        "publishedOn": "Published on {date}",
+        "views": "{count, plural, one {# view} other {# views}}",
+        "applyNow": "Apply now"
+      },
+      "sections": {
+        "aboutRole": "About this role",
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "requiredSkills": "Required skills",
+        "languages": "Languages",
+        "benefits": "Benefits"
+      },
+      "deadline": {
+        "title": "Application Deadline",
+        "note": "We encourage you to apply as soon as possible as the selection process is ongoing."
+      },
+      "sidebar": {
+        "quickFacts": "Quick Facts",
+        "salary": "Salary",
+        "employmentType": "Employment Type",
+        "workplaceType": "Workplace Type",
+        "experienceLevel": "Experience Level",
+        "openings": "Openings",
+        "openingsValue": "{count, plural, one {# position} other {# positions}}",
+        "applyNow": "Apply now"
+      },
+      "company": {
+        "title": "About the Company",
+        "size": "Size: {count} employees"
+      },
+      "recruiter": {
+        "title": "Posted By",
+        "defaultName": "Recruiter",
+        "contact": "Contact recruiter"
+      },
+      "notFound": {
+        "title": "Job not found | TalentBridge AI",
+        "description": "This job offer no longer exists."
+      },
+      "notSpecified": "Not specified",
+      "unknownCompany": "Company",
+      "employmentType": {
+        "FULL_TIME": "Full-time",
+        "PART_TIME": "Part-time",
+        "CONTRACT": "Contract",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "TEMPORARY": "Temporary",
+        "INTERNSHIP": "Internship",
+        "FREELANCE": "Freelance"
+      },
+      "workplaceType": {
+        "ONSITE": "On-site",
+        "HYBRID": "Hybrid",
+        "REMOTE": "Remote"
+      },
+      "experienceLevel": {
+        "ENTRY": "Entry Level",
+        "JUNIOR": "Junior",
+        "MID": "Mid Level",
+        "SENIOR": "Senior",
+        "LEAD": "Lead",
+        "EXECUTIVE": "Executive"
+      }
+    }
+  }
+}

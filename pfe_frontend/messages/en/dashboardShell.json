@@ -1,0 +1,57 @@
+{
+  "dashboardShell": {
+    "nav": {
+      "candidate": {
+        "dashboard": "Dashboard",
+        "myProfile": "My Profile",
+        "myResumes": "My Resumes",
+        "myInterviews": "My Interviews",
+        "jobSearch": "Job Search",
+        "matchOffer": "Match an Offer",
+        "aiRecommendations": "AI Recommendations",
+        "myApplications": "My Applications",
+        "settings": "Settings"
+      },
+      "recruiter": {
+        "dashboard": "Dashboard",
+        "myProfile": "My Profile",
+        "myJobs": "My Jobs",
+        "interviews": "Interviews",
+        "analytics": "Analytics",
+        "settings": "Settings"
+      },
+      "admin": {
+        "dashboard": "Dashboard",
+        "myProfile": "My Profile",
+        "userManagement": "User Management",
+        "jobListings": "Job Listings",
+        "reportManagement": "Report Management"
+      }
+    },
+    "search": {
+      "adminPlaceholder": "Search analytics, users or jobs...",
+      "defaultPlaceholder": "Search job titles, companies..."
+    },
+    "userTitle": {
+      "headAdministrator": "Head Administrator",
+      "recruiter": "Recruiter",
+      "candidate": "Candidate"
+    },
+    "sidebar": {
+      "expand": "Expand sidebar",
+      "collapse": "Collapse sidebar",
+      "closeSidebar": "Close sidebar",
+      "toggleSidebar": "Toggle sidebar"
+    },
+    "actions": {
+      "generateNewCv": "Generate New CV",
+      "newReport": "New Report"
+    },
+    "topbar": {
+      "notifications": "Notifications",
+      "messages": "Messages",
+      "signOut": "Sign out"
+    },
+    "avatarAlt": "avatar"
+  }
+}

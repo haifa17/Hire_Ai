@@ -1,0 +1,639 @@
+{
+  "recruiterDashboard": {
+    "overview": {
+      "heading": "Tableau de bord recrutement",
+      "subtitle": "Analyses en temps réel, gestion des offres d'emploi et mise en correspondance des candidats par IA.",
+      "postNewJob": "Publier une offre",
+      "candidateFallbackName": "Candidat",
+      "stats": {
+        "activeJobs": "Offres actives",
+        "totalCount": "{count} au total",
+        "jobOffersPosted": "offres d'emploi publiées",
+        "totalApplicants": "Total des candidatures",
+        "acrossPublished": "Sur l'ensemble des postes publiés",
+        "totalViews": "Total des vues d'offres",
+        "candidateViews": "Vues des candidats sur les offres",
+        "aiCandidatesRanked": "Candidats classés par IA",
+        "scoredByAi": "Notés par le moteur de matching IA"
+      },
+      "topCandidates": {
+        "title": "Meilleurs candidats (IA)",
+        "description": "Classés par algorithmes pour vos offres actives",
+        "viewAll": "Voir tout",
+        "loading": "Chargement des meilleurs candidats...",
+        "empty": {
+          "title": "Aucun candidat pour le moment",
+          "description": "Lorsque des candidats postuleront à vos offres, ils apparaîtront ici."
+        },
+        "appliedFor": "A postulé pour : {job}",
+        "matchPercent": "{percent}% de correspondance",
+        "review": "Examiner"
+      },
+      "activeJobs": {
+        "title": "Offres d'emploi actives",
+        "description": "Vos postes actuellement ouverts",
+        "manage": "Gérer",
+        "loading": "Chargement des offres d'emploi...",
+        "empty": {
+          "title": "Aucune offre d'emploi active",
+          "description": "Créez votre première offre d'emploi pour commencer à recevoir des candidatures.",
+          "postJob": "Publier une offre maintenant"
+        },
+        "views": "Vues",
+        "applicants": "Candidats"
+      },
+      "pagination": {
+        "applicantsSummary": "Page {page} sur {total} ({count} candidats)",
+        "jobsSummary": "Page {page} sur {total} ({count} offres)",
+        "prev": "Précédent",
+        "next": "Suivant"
+      }
+    },
+    "applicants": {
+      "workspace": "Espace recruteur",
+      "heading": "Candidatures reçues",
+      "subtitle": "Consultez, filtrez et suivez les candidatures soumises pour vos offres d'emploi.",
+      "subtitleWithJob": "Consultez toutes les candidatures soumises pour l'offre d'emploi sélectionnée.",
+      "unknownCandidate": "Candidat inconnu",
+      "selectJob": {
+        "title": "Sélectionnez une offre d'emploi",
+        "description": "Pour consulter les candidatures, veuillez sélectionner une offre d'emploi spécifique parmi vos annonces actives.",
+        "goToListings": "Voir les offres d'emploi"
+      },
+      "loadError": {
+        "title": "Impossible de charger les candidatures",
+        "backToJobs": "Retour aux offres"
+      },
+      "jobSummary": {
+        "apps": "Candidatures",
+        "unknownCompany": "Entreprise inconnue"
+      },
+      "kpis": {
+        "totalCandidates": "Total des candidats",
+        "underReview": "En cours d'examen",
+        "interviewStage": "Phase d'entretien",
+        "decisionsMade": "Décisions prises"
+      },
+      "table": {
+        "candidate": "Candidat",
+        "email": "E-mail",
+        "statusTransition": "Changement de statut",
+        "appliedOn": "Postulé le",
+        "aiMatch": "Correspondance IA",
+        "cv": "CV",
+        "actions": "Actions",
+        "idPrefix": "ID : {id}..."
+      },
+      "empty": {
+        "title": "Aucun candidat trouvé",
+        "description": "Nous n'avons trouvé aucun candidat correspondant à vos filtres ou à votre recherche.",
+        "resetFilters": "Réinitialiser les filtres et la recherche"
+      },
+      "statusLabels": {
+        "pending": "EN ATTENTE",
+        "reviewed": "EXAMINÉ",
+        "shortlisted": "PRÉSÉLECTIONNÉ",
+        "interview": "ENTRETIEN",
+        "accepted": "ACCEPTÉ",
+        "rejected": "REFUSÉ"
+      },
+      "aiMatch": {
+        "pending": "En attente",
+        "notEvaluated": "Non évalué",
+        "runScoreTitle": "Lancer le score de correspondance IA",
+        "insightsTitle": "Analyse de correspondance IA",
+        "breakdown": {
+          "requiredSkills": "Compétences requises",
+          "projectsFit": "Adéquation des projets",
+          "experienceRelevance": "Pertinence de l'expérience",
+          "educationMatch": "Correspondance de formation",
+          "semanticSimilarity": "Similarité sémantique"
+        }
+      },
+      "cv": {
+        "openCv": "Ouvrir le CV",
+        "noCvUploaded": "Aucun CV téléversé"
+      },
+      "actions": {
+        "rematch": "Recalculer",
+        "viewDetails": "Voir les détails",
+        "schedule": "Planifier"
+      },
+      "toast": {
+        "statusUpdated": "Statut du candidat mis à jour avec succès : {status}",
+        "statusUpdateFailed": "Échec de la mise à jour du statut",
+        "matchRecalculated": "Score de correspondance IA recalculé avec succès !",
+        "matchRecalculateFailed": "Échec du recalcul du score de correspondance"
+      }
+    },
+    "applicantDetail": {
+      "backToApplications": "Retour aux candidatures",
+      "heading": "Examen de la candidature",
+      "rematchCandidate": "Recalculer le score du candidat",
+      "scheduleInterview": "Planifier un entretien",
+      "viewAll": "Tout voir",
+      "applicantProfile": "Profil du candidat",
+      "appliedForAt": "A postulé pour {job} chez {company}",
+      "applicationId": "ID de candidature",
+      "unknownCompany": "Entreprise inconnue",
+      "recruiterFallback": "Recruteur",
+      "candidateFallback": "Candidat",
+      "statusLabels": {
+        "pending": "EN ATTENTE",
+        "reviewed": "EXAMINÉ",
+        "shortlisted": "PRÉSÉLECTIONNÉ",
+        "interview": "ENTRETIEN",
+        "accepted": "ACCEPTÉ",
+        "rejected": "REFUSÉ",
+        "unknown": "INCONNU"
+      },
+      "timeline": {
+        "applied": "Candidature envoyée",
+        "reviewed": "Examinée",
+        "interview": "Entretien",
+        "offer": "Offre"
+      },
+      "tabs": {
+        "aiInsights": "Analyse IA",
+        "fullProfile": "Profil complet",
+        "documents": "Documents ({count})"
+      },
+      "aiInsights": {
+        "pendingTitle": "Analyse de correspondance IA en attente",
+        "pendingDescription": "Aucune analyse de correspondance n'a encore été générée pour cette candidature. Lancez le pipeline d'agents pour calculer le score ATS et les informations sur le candidat.",
+        "runMatchScore": "Lancer le score de correspondance IA",
+        "atsMatchRating": "Note de correspondance ATS",
+        "matchRatingBreakdown": "Détail de la note de correspondance",
+        "notEvaluated": "Non évalué",
+        "ruleBasedLabel": "Basé sur les règles (ESCO+compétences) :",
+        "semanticLabel": "Sémantique (embedding IA) :",
+        "keyScoreDrivers": "Principaux facteurs du score",
+        "recommendationTitle": "Recommandation du candidat synthétisée par l'IA",
+        "keyFitStrengths": "Points forts clés",
+        "areasForReview": "Points à examiner",
+        "skillsMatchAnalysis": "Analyse de correspondance des compétences",
+        "matchedCoreSkills": "Compétences clés correspondantes ({count})",
+        "noMatchedSkills": "Aucune compétence exactement correspondante trouvée dans le CV.",
+        "missingRequiredSkills": "Compétences requises manquantes ({count})",
+        "allSkillsMatching": "Toutes les compétences requises correspondent !",
+        "defaultStrengths": {
+          "0": "Forte adéquation technique avec les compétences requises principales.",
+          "1": "Expérience professionnelle solide démontrée dans le CV.",
+          "2": "Mise en forme du CV claire et professionnelle."
+        },
+        "fallbackStrengths": {
+          "0": "Adéquation technique validée.",
+          "1": "Le parcours académique répond aux exigences."
+        },
+        "defaultGaps": {
+          "0": "Certaines compétences secondaires de l'offre pourraient être approfondies.",
+          "1": "Les détails sur la méthodologie Agile n'ont pas été explicitement mentionnés."
+        },
+        "noGaps": "Aucun écart critique identifié.",
+        "defaultSummary": "Le candidat présente un profil équilibré et solide répondant aux exigences principales. Son expérience apporte une profondeur technique appréciable.",
+        "fallbackSummary": "Analyse IA terminée. Recommandé pour un entretien technique."
+      },
+      "scoreBreakdown": {
+        "requiredSkills": "Compétences requises",
+        "projectsFit": "Adéquation des projets",
+        "experienceRelevance": "Pertinence de l'expérience",
+        "educationMatch": "Correspondance de formation",
+        "languageFit": "Adéquation linguistique",
+        "embeddingSimilarity": "Similarité d'embedding",
+        "certificationsFit": "Adéquation des certifications"
+      },
+      "scoreComposition": {
+        "learnedRanker": "Classement appris (LightGBM)",
+        "weightedRules": "Règles pondérées + sémantique"
+      },
+      "profile": {
+        "viewCompleteProfile": "Voir le profil complet du candidat",
+        "viewCompleteProfileDescription": "Explorez l'historique professionnel complet, la formation, les compétences, les langues, les projets et les certifications.",
+        "openProfile": "Ouvrir le profil",
+        "contactDetails": "Coordonnées",
+        "notProvided": "Non renseigné",
+        "candidateOverview": "Aperçu du candidat",
+        "candidateOverviewDescription": "Cet aperçu présente les métadonnées associées directement au compte du candidat. Les remarques du recruteur et les points de contact doivent être mis à jour dans la carte de statut.",
+        "professionalSummary": "Résumé professionnel",
+        "noSummary": "Aucun résumé n'a été soumis.",
+        "expertiseSkillsTags": "Expertise et compétences",
+        "noSkillsListed": "Aucune compétence spécifique répertoriée."
+      },
+      "documents": {
+        "cvFallbackName": "CV.pdf",
+        "coverLetterFallbackName": "Lettre_de_motivation.pdf",
+        "supportingFallbackName": "Document justificatif {index}",
+        "viewFile": "Voir le fichier",
+        "downloadFile": "Télécharger le fichier",
+        "fileUnavailable": "Fichier indisponible",
+        "noFiles": "Aucun fichier soumis pour ce candidat."
+      },
+      "coverLetterTitle": "Lettre de motivation du candidat",
+      "notFound": {
+        "title": "Candidature introuvable",
+        "description": "La candidature demandée n'a pas pu être chargée, ou vous n'êtes pas autorisé à la consulter.",
+        "returnToApplications": "Retour aux candidatures"
+      },
+      "sidebar": {
+        "statusTransition": "Changement de statut",
+        "statusTransitionDescription": "Ajustez l'état du candidat dans le pipeline de recrutement.",
+        "selectNewStatus": "Sélectionner un nouveau statut",
+        "saveStatusUpdate": "Enregistrer la mise à jour du statut",
+        "candidateContact": "Contact du candidat",
+        "noEmail": "Aucun e-mail",
+        "contactCandidate": "Contacter le candidat",
+        "jobOfferDetails": "Détails de l'offre d'emploi",
+        "appliedOn": "Candidature envoyée le {date}",
+        "fullTime": "Temps plein",
+        "assignedRecruiter": "Recruteur assigné",
+        "emailRecruiter": "Envoyer un e-mail au recruteur",
+        "noRecruiterAssigned": "Aucun recruteur actuellement assigné."
+      },
+      "toast": {
+        "matchRecalculated": "Score de correspondance IA recalculé avec succès !",
+        "matchRecalculateFailed": "Échec du recalcul du score de correspondance",
+        "statusUpdated": "Statut de la candidature mis à jour avec succès",
+        "somethingWentWrong": "Une erreur est survenue"
+      }
+    },
+    "candidateProfile": {
+      "loadError": "Impossible de charger les détails du profil du candidat.",
+      "profileNotFound": "Profil du candidat introuvable.",
+      "back": "Retour",
+      "candidateFallback": "Candidat",
+      "candidateProfileLabel": "Profil du candidat",
+      "personalInformation": "Informations personnelles",
+      "fullName": "Nom complet",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "professionalSummary": "Résumé professionnel",
+      "noSummary": "Aucun résumé ajouté pour le moment.",
+      "careerPreferences": "Préférences de carrière",
+      "openToWork": "Ouvert aux opportunités",
+      "yes": "Oui",
+      "no": "Non",
+      "desiredPosition": "Poste souhaité",
+      "desiredSalary": "Salaire souhaité",
+      "socialLinks": "Liens sociaux",
+      "noSocialLinks": "Aucun lien social ajouté.",
+      "present": "Aujourd'hui",
+      "positionFallback": "Poste",
+      "projectFallback": "Projet",
+      "certificationFallback": "Certification",
+      "levels": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé",
+        "expert": "Expert",
+        "native": "Langue maternelle"
+      },
+      "socialLabels": {
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "twitter": "Twitter",
+        "portfolio": "Portfolio"
+      },
+      "sections": {
+        "experience": "Expérience",
+        "education": "Formation",
+        "skills": "Compétences",
+        "languages": "Langues",
+        "projects": "Projets",
+        "certifications": "Certifications"
+      },
+      "empty": {
+        "experiences": "Aucune expérience ajoutée.",
+        "education": "Aucune formation ajoutée.",
+        "skills": "Aucune compétence ajoutée.",
+        "languages": "Aucune langue ajoutée.",
+        "projects": "Aucun projet ajouté.",
+        "certifications": "Aucune certification ajoutée."
+      },
+      "educationFieldOf": "en {field}",
+      "issueDate": "Date d'obtention : {date}",
+      "viewCertificate": "Voir le document du certificat"
+    },
+    "interviews": {
+      "workspaceBadge": "Espace Recruteur",
+      "title": "Entretiens",
+      "subtitle": "Suivez tous vos entretiens actifs, consultez les détails de planification, évaluez les candidats et organisez facilement de nouvelles sessions de recrutement.",
+      "viewJobs": "Voir les offres",
+      "activeFilters": "Filtres actifs :",
+      "jobFilterLabel": "Offre :",
+      "candidateFilterLabel": "Candidat :",
+      "removeJobFilter": "Retirer le filtre Offre",
+      "removeCandidateFilter": "Retirer le filtre Candidat",
+      "clearAll": "Tout effacer",
+      "selectedJobOffer": "Offre sélectionnée",
+      "selectedCandidate": "Candidat sélectionné",
+      "stats": {
+        "total": "Total des entretiens",
+        "matchingFilters": "Correspondant aux filtres actifs",
+        "scheduledAcrossJobs": "Planifiés sur l'ensemble de vos offres",
+        "upcoming": "À venir",
+        "pendingEvaluations": "Évaluations en attente",
+        "completed": "Terminés",
+        "assessedArchived": "Évalués et archivés"
+      },
+      "emptyState": {
+        "filteredTitle": "Aucun entretien ne correspond aux filtres sélectionnés",
+        "defaultTitle": "Aucun entretien planifié pour le moment",
+        "filteredDescription": "Essayez d'ajuster vos filtres d'offre ou de candidat, ou effacez-les pour voir tous les entretiens planifiés.",
+        "defaultDescription": "Commencez à organiser des sessions d'évaluation en planifiant un nouvel entretien depuis le profil de candidature d'un candidat.",
+        "clearFilters": "Effacer les filtres",
+        "scheduleInterview": "Planifier un entretien"
+      },
+      "reviewDetails": "Voir les détails"
+    },
+    "interviewDetail": {
+      "workspaceBadge": "Espace Recruteur",
+      "heading": "Gestion de l'entretien",
+      "backToInterviews": "Retour aux entretiens",
+      "invalidLink": "Lien d'entretien invalide.",
+      "notFound": "Entretien introuvable.",
+      "statusLabel": "Statut : {status}",
+      "defaultCancelNote": "Annulé par le recruteur. Veuillez contacter le candidat pour un suivi.",
+      "defaultCandidateName": "Candidat",
+      "defaultProfessionalSummary": "Candidat expérimenté en ingénierie logicielle, doté de compétences spécialisées en technologies web, architectures robustes et conception de produits.",
+      "toast": {
+        "updated": "Entretien mis à jour avec succès",
+        "markedCompleted": "Entretien marqué comme terminé",
+        "cancelled": "Entretien annulé",
+        "deleted": "Entretien supprimé"
+      },
+      "rescheduleSection": {
+        "title": "Replanifier et modifier la session",
+        "description": "Modifiez le titre, la date, le créneau horaire, la durée ou la note de communication de cette session planifiée."
+      },
+      "statusPanel": {
+        "title": "Panneau de gestion du statut",
+        "description": "Faites évoluer le statut du candidat ou supprimez cet enregistrement de la base de données.",
+        "completedNotice": "Évaluations verrouillées. Cet entretien est finalisé. Les mises à jour supplémentaires sont enregistrées dans les journaux d'audit.",
+        "cancelledNotice": "Entretien annulé. Vous pouvez utiliser le formulaire ci-dessus pour choisir un nouveau créneau et rétablir l'entretien.",
+        "markCompleted": "Marquer comme terminé",
+        "cancelInterview": "Annuler l'entretien",
+        "deleteInterview": "Supprimer l'entretien"
+      },
+      "statusBanner": {
+        "scheduled": {
+          "label": "Planifié",
+          "description": "Cette session de recrutement est actuellement active et planifiée comme prévu. Tous les préparatifs sont en place."
+        },
+        "rescheduled": {
+          "label": "Replanifié",
+          "description": "Cette session de recrutement a été replanifiée à une nouvelle date. Les notifications ont été envoyées."
+        },
+        "completed": {
+          "label": "Terminé",
+          "description": "Cette session d'entretien est marquée comme terminée. Les évaluations du candidat sont sécurisées et verrouillées."
+        },
+        "cancelled": {
+          "label": "Annulé",
+          "description": "Cette session de recrutement a été annulée. Vous pouvez en planifier une nouvelle ou la réactiver si nécessaire."
+        }
+      }
+    },
+    "interviewSchedule": {
+      "workspaceBadge": "Espace Recruteur",
+      "heading": "Planifier un entretien",
+      "subtitle": "Configurez les paramètres, choisissez les créneaux horaires et envoyez automatiquement les e-mails d'invitation.",
+      "backToApplication": "Retour à la candidature",
+      "browseApplications": "Parcourir les candidatures",
+      "defaultCandidateName": "Candidat",
+      "defaultProfessionalSummary": "Aucun résumé professionnel fourni. Consultez les documents du CV pour vérifier les compétences et le parcours du candidat.",
+      "missingContext": {
+        "title": "Contexte de candidature manquant",
+        "description": "Pour planifier un entretien, veuillez accéder à ce planificateur directement depuis une fiche de candidature ou un pipeline d'offre d'emploi."
+      },
+      "notFound": {
+        "title": "Candidature introuvable",
+        "description": "Les détails de la candidature du candidat n'ont pas pu être récupérés. Veuillez vérifier les paramètres de l'URL ou réessayer."
+      },
+      "form": {
+        "title": "Paramètres de la nouvelle session",
+        "description": "Saisissez les paramètres de la réunion, choisissez les créneaux, vérifiez les conflits d'agenda et préparez les notifications."
+      },
+      "toast": {
+        "missingInfo": "Les informations sur le candidat ou l'offre d'emploi sont manquantes",
+        "missingInterviewId": "L'entretien a été planifié, mais aucun identifiant d'entretien n'a été renvoyé.",
+        "scheduled": "Entretien planifié avec succès"
+      }
+    },
+    "jobs": {
+      "title": "Offres d'emploi",
+      "subtitle": "Créez, publiez et optimisez le pipeline de recrutement de votre entreprise.",
+      "refresh": "Actualiser",
+      "newJobOffer": "Nouvelle offre",
+      "createJobOffer": "Créer une offre",
+      "confirmDelete": "Supprimer cette offre d'emploi ? Cette action ne peut être annulée qu'à partir des sauvegardes de la base de données.",
+      "toasts": {
+        "closeSuccess": "Offre d'emploi clôturée.",
+        "closeError": "Impossible de clôturer l'offre d'emploi.",
+        "deleteSuccess": "Offre d'emploi supprimée.",
+        "deleteError": "Impossible de supprimer l'offre d'emploi."
+      },
+      "empty": {
+        "title": "Aucune offre d'emploi trouvée",
+        "subtitle": "Commencez par créer votre première offre ou ajustez les filtres."
+      },
+      "viewMode": {
+        "table": "Tableau",
+        "cards": "Cartes"
+      },
+      "pageInfo": "Page {page} sur {totalPages} ({total} offres)",
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "jobDetail": {
+      "notSpecified": "Non spécifié",
+      "employmentType": {
+        "FULL_TIME": "Temps plein",
+        "PART_TIME": "Temps partiel",
+        "CONTRACT": "Contrat",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "TEMPORARY": "Temporaire",
+        "INTERNSHIP": "Stage",
+        "FREELANCE": "Freelance"
+      },
+      "workplaceType": {
+        "ONSITE": "Sur site",
+        "HYBRID": "Hybride",
+        "REMOTE": "Télétravail"
+      },
+      "experienceLevel": {
+        "ENTRY": "Débutant",
+        "JUNIOR": "Junior",
+        "MID": "Intermédiaire",
+        "SENIOR": "Senior",
+        "LEAD": "Lead",
+        "EXECUTIVE": "Cadre dirigeant"
+      },
+      "status": {
+        "PUBLISHED": "Publiée",
+        "CLOSED": "Clôturée",
+        "DRAFT": "Brouillon"
+      },
+      "backToJobs": "Retour aux offres",
+      "notFound": {
+        "title": "Offre d'emploi introuvable",
+        "description": "Cette offre d'emploi a peut-être été supprimée, archivée ou n'est pas disponible."
+      },
+      "urgent": "Urgent",
+      "featured": "En vedette",
+      "postedOn": "Publiée le {date}",
+      "publishDraft": {
+        "title": "Publier ce brouillon",
+        "description": "Rendez cette offre visible pour les candidatures."
+      },
+      "stats": {
+        "totalViews": "Vues totales",
+        "totalViewsHint": "Vues des candidats sur la page de détails",
+        "applications": "Candidatures",
+        "applicationsHint": "Total des CV soumis à ce jour",
+        "attractionRate": "Taux d'attraction",
+        "attractionRateHint": "Ratio des vues sur les candidatures"
+      },
+      "aiCta": {
+        "title": "Meilleurs candidats identifiés par l'IA",
+        "description": "Consultez les 10 meilleurs candidats recommandés pour ce poste, classés par notre moteur d'IA"
+      },
+      "sections": {
+        "aboutRole": "À propos du poste",
+        "responsibilities": "Responsabilités",
+        "requirements": "Exigences",
+        "requiredSkills": "Compétences requises",
+        "preferredSkills": "Compétences souhaitées",
+        "languages": "Langues",
+        "benefits": "Avantages",
+        "applicationDeadline": "Date limite de candidature"
+      },
+      "sidebar": {
+        "companyProfile": "Profil de l'entreprise",
+        "companyLogoAlt": "Logo de l'entreprise",
+        "companySize": "Taille : {size} employés",
+        "postedBy": "Publiée par",
+        "recruiter": "Recruteur",
+        "keyDetails": "Informations clés",
+        "salary": "Salaire",
+        "contract": "Contrat",
+        "workplace": "Mode de travail",
+        "experience": "Expérience",
+        "openings": "Postes à pourvoir"
+      },
+      "openings": "{count, plural, one {# poste} other {# postes}}"
+    },
+    "jobEdit": {
+      "loading": "Chargement de l'offre d'emploi...",
+      "notFound": "Offre d'emploi introuvable.",
+      "title": "Modifier l'offre d'emploi",
+      "subtitle": "Modifiez et enregistrez votre offre d'emploi."
+    },
+    "jobRecommendations": {
+      "backToJob": "Retour aux détails de l'offre",
+      "title": "Meilleurs candidats",
+      "for": "Pour :",
+      "sort": {
+        "score": "Score global",
+        "skills": "Correspondance des compétences",
+        "experience": "Adéquation de l'expérience",
+        "semantic": "Correspondance du profil"
+      },
+      "computing": "Calcul en cours…",
+      "refresh": "Actualiser",
+      "requiredSkillsCount": "{count, plural, one {# compétence requise} other {# compétences requises}}",
+      "cachedResults": "Résultats en cache",
+      "freshResults": "Résultats à jour",
+      "candidateCount": "{count, plural, one {# candidat} other {# candidats}}",
+      "computedAt": "Calculé le {date}",
+      "errors": {
+        "load": "Impossible de charger les recommandations. Veuillez réessayer.",
+        "refresh": "Échec de l'actualisation. Le service d'IA est peut-être indisponible."
+      },
+      "loading": {
+        "title": "Recherche des meilleurs candidats...",
+        "subtitle": "Notre IA analyse les profils des candidats par rapport aux exigences de votre offre"
+      },
+      "empty": {
+        "title": "Aucun candidat trouvé pour le moment",
+        "description": "Assurez-vous qu'il y a des candidats inscrits sur la plateforme. Cliquez sur Actualiser pour lancer le pipeline de matching IA.",
+        "cta": "Trouver des candidats"
+      }
+    },
+    "jobCreate": {
+      "title": "Créer une offre d'emploi",
+      "subtitle": "Utilisez l'assistant pour rédiger, vérifier et publier votre offre d'emploi."
+    },
+    "profile": {
+      "title": "Mon profil",
+      "subtitle": "Consultez vos informations de recruteur.",
+      "editProfile": "Modifier le profil",
+      "errors": {
+        "loadFailed": "Impossible de charger les données du profil recruteur.",
+        "notFound": "Aucun profil trouvé."
+      },
+      "sections": {
+        "personalInfo": { "title": "Informations personnelles" },
+        "positionInfo": { "title": "Informations sur le poste" },
+        "companyInfo": { "title": "Informations sur l'entreprise" }
+      },
+      "fields": {
+        "fullName": "Nom complet",
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "position": "Poste",
+        "department": "Département",
+        "companyName": "Nom de l'entreprise",
+        "industry": "Secteur d'activité",
+        "companySize": "Taille de l'entreprise",
+        "description": "Description"
+      }
+    },
+    "settings": {
+      "title": "Paramètres",
+      "subtitle": "Gérez votre compte recruteur et vos préférences en un seul endroit.",
+      "sections": {
+        "account": {
+          "title": "Compte",
+          "editProfile": {
+            "title": "Modifier le profil",
+            "description": "Mettez à jour votre profil recruteur et les informations de votre entreprise.",
+            "action": "Accéder au profil"
+          },
+          "changePassword": {
+            "title": "Changer le mot de passe",
+            "description": "Utilisez un mot de passe fort et mettez-le à jour régulièrement.",
+            "action": "Changer le mot de passe"
+          }
+        },
+        "notifications": {
+          "title": "Notifications",
+          "instantAlerts": {
+            "title": "Alertes nouvelles candidatures",
+            "description": "Recevez une notification instantanée lorsqu'un candidat postule à vos offres.",
+            "toggleAriaLabel": "Activer ou désactiver les alertes de candidature"
+          },
+          "weeklyDigest": {
+            "title": "Résumé hebdomadaire de performance",
+            "description": "Recevez un résumé hebdomadaire des vues de vos offres et des tendances de candidature.",
+            "toggleAriaLabel": "Activer ou désactiver le résumé hebdomadaire"
+          }
+        },
+        "privacy": {
+          "title": "Confidentialité",
+          "companyVisibility": {
+            "title": "Visibilité du profil de l'entreprise",
+            "description": "Contrôlez si le profil de votre entreprise apparaît publiquement dans les résultats de recherche.",
+            "toggleAriaLabel": "Activer ou désactiver la visibilité publique du profil de l'entreprise"
+          }
+        },
+        "other": {
+          "title": "Autres paramètres",
+          "description": "D'autres préférences pour les recruteurs seront disponibles ici au fur et à mesure des nouvelles fonctionnalités."
+        }
+      }
+    }
+  }
+}

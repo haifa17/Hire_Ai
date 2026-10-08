@@ -1,0 +1,371 @@
+{
+  "adminDashboard": {
+    "overview": {
+      "loading": "Loading dashboard...",
+      "error": "Unable to load dashboard statistics.",
+      "stats": {
+        "totalUsers": { "label": "Total Users", "subtext": "{candidates} Candidates / {recruiters} Recruiters" },
+        "totalApplications": { "label": "Total Applications", "subtext": "{count} this month" },
+        "aiCvsGenerated": { "label": "AI CVs Generated", "subtext": "{count} resumes on the platform" },
+        "activeJobPosts": { "label": "Active Job Posts", "subtext": "{count} job offers in total" }
+      },
+      "platformGrowth": {
+        "title": "Platform Growth",
+        "subtitle": "New Signups (Last 6 Months)"
+      },
+      "aiInsights": {
+        "title": "Platform Snapshot",
+        "aiCvs": { "label": "AI CVs Generated" },
+        "pendingReports": {
+          "label": "Pending Reports",
+          "clear": "Clear",
+          "needsAttention": "Needs attention",
+          "description": "{count} report(s) awaiting review"
+        },
+        "applications": {
+          "label": "Applications This Month",
+          "description": "{count} applications submitted this month"
+        },
+        "viewFullMetrics": "View All Reports"
+      },
+      "alerts": {
+        "title": "Recent System Alerts",
+        "subtitle": "Pending job reports requiring your attention",
+        "viewAll": "View All Alerts",
+        "empty": "No pending alerts. Everything looks good.",
+        "table": {
+          "status": "Status",
+          "details": "Alert Details",
+          "type": "Type",
+          "time": "Time",
+          "actions": "Actions"
+        },
+        "status": {
+          "Pending": "Pending"
+        },
+        "action": "Review"
+      }
+    },
+    "jobsList": {
+      "title": "All Job Offers",
+      "subtitle": "Supervise, update, and moderate every job offer in the platform.",
+      "refresh": "Refresh",
+      "confirmDelete": "Delete this job offer? This action can be reverted only from database backups.",
+      "toasts": {
+        "closeSuccess": "Job offer closed.",
+        "closeError": "Could not close job offer.",
+        "deleteSuccess": "Job offer deleted.",
+        "deleteError": "Could not delete job offer."
+      },
+      "empty": {
+        "title": "No job offers found",
+        "description": "No job offers match the selected filters."
+      },
+      "viewMode": {
+        "table": "Table",
+        "cards": "Cards"
+      },
+      "pagination": {
+        "summary": "Showing page {page} of {totalPages} ({total} jobs)",
+        "previous": "Previous",
+        "next": "Next"
+      }
+    },
+    "jobDetails": {
+      "loading": "Loading job offer...",
+      "notFound": "Job offer not found.",
+      "posted": "Posted {date}",
+      "sections": {
+        "about": "About this role",
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "requiredSkills": "Required skills",
+        "preferredSkills": "Preferred skills",
+        "languages": "Languages",
+        "benefits": "Benefits",
+        "applicationDeadline": "Application Deadline"
+      },
+      "footer": {
+        "stats": "Applications: {applications} • Views: {views}",
+        "backToJobs": "Back to jobs"
+      },
+      "aside": {
+        "companyLogoAlt": "Company logo",
+        "logoMissing": "📸 Logo not uploaded",
+        "draftNotice": "This offer is currently a draft and is not visible publicly.",
+        "about": "About {company}",
+        "postedBy": "Posted by",
+        "recruiterFallback": "Recruiter",
+        "contact": "Contact",
+        "keyDetails": "Key details",
+        "notSpecified": "Not specified",
+        "openings": "{count, plural, one {# position} other {# positions}}"
+      }
+    },
+    "jobEdit": {
+      "loading": "Loading job offer...",
+      "notFound": "Job offer not found.",
+      "title": "Edit Job Offer",
+      "subtitle": "Update this job offer as an administrator."
+    },
+    "profile": {
+      "title": "Admin Profile",
+      "subtitle": "Review and update your administrator account information.",
+      "successMessage": "Profile updated successfully.",
+      "errors": {
+        "load": "Unable to load your admin profile.",
+        "update": "Unable to update your admin profile."
+      },
+      "sections": {
+        "personalInfo": "Personal Information",
+        "security": "Security",
+        "adminNotes": "Admin Notes"
+      },
+      "photo": {
+        "alt": "Admin avatar",
+        "placeholder": "Avatar",
+        "title": "Profile Photo",
+        "recommendedSize": "Recommended size: 400x400px",
+        "change": "Change Photo"
+      },
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+1 (555) 000-1234",
+        "address": "Address",
+        "addressPlaceholder": "City, Country"
+      },
+      "security": {
+        "passwordLabel": "Password",
+        "passwordHint": "Use a strong password and update it regularly.",
+        "changePassword": "Change Password"
+      },
+      "adminNotesText": "Keep your account information current to simplify system notifications and operational reporting.",
+      "saveButton": "Save Profile Changes"
+    },
+    "reports": {
+      "title": "Report Management",
+      "subtitle": "Moderate job offers reported by platform users",
+      "countBadge": "{count, plural, one {# report} other {# reports}}",
+      "loading": "Loading reports...",
+      "jobNotFound": "Job offer not found",
+      "jobDeleted": "Offer deleted",
+      "errors": {
+        "list": "Unable to load the list of reports.",
+        "resolve": "Error while resolving the report.",
+        "deleteJob": "Error while deleting the job offer."
+      },
+      "messages": {
+        "resolveSuccess": "The report has been marked as resolved.",
+        "deleteSuccess": "The offer \"{title}\" was deleted and its reports were resolved."
+      },
+      "actions": {
+        "hide": "Hide",
+        "clear": "Clear",
+        "view": "View",
+        "viewJobTitle": "View job offer",
+        "resolve": "Resolve",
+        "deleteJob": "Delete offer"
+      },
+      "filters": {
+        "statusLabel": "Status:",
+        "typeLabel": "Type:",
+        "allStatuses": "All statuses",
+        "allTypes": "All types",
+        "dateLabel": "Date: {order}",
+        "newest": "Most recent",
+        "oldest": "Oldest"
+      },
+      "status": {
+        "PENDING": "Pending",
+        "RESOLVED": "Resolved"
+      },
+      "types": {
+        "FRAUD": "Fraud",
+        "INCORRECT_INFO": "Incorrect information",
+        "SPAM": "Spam",
+        "EXPIRED": "Expired",
+        "INAPPROPRIATE_CONTENT": "Inappropriate content",
+        "OTHER": "Other"
+      },
+      "empty": {
+        "title": "No reports found",
+        "description": "No reports match your current filters."
+      },
+      "table": {
+        "status": "Status",
+        "jobOffer": "Job offer",
+        "reasonAndType": "Reason & Type",
+        "reportedBy": "Reported by",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "pagination": {
+        "summary": "Page <strong>{page}</strong> of <strong>{totalPages}</strong> ({total} total)",
+        "previous": "Previous",
+        "next": "Next"
+      },
+      "deleteModal": {
+        "title": "Confirm deletion",
+        "irreversible": "Irreversible action",
+        "confirmText": "Are you sure you want to permanently delete the job offer <strong>\"{title}\"</strong>? All reports associated with this offer will automatically be marked as resolved.",
+        "cancel": "Cancel",
+        "confirm": "Yes, delete the offer",
+        "deleting": "Deleting..."
+      }
+    },
+    "users": {
+      "title": "User Management",
+      "subtitle": "Monitor users and filter by role, verification status, and activity.",
+      "totalUsers": "{count} users",
+      "errors": {
+        "load": "Unable to load users. Please try again.",
+        "verify": "Unable to verify user email.",
+        "updateUser": "Unable to update user.",
+        "suspension": "Unable to update account suspension status."
+      },
+      "roleOptions": {
+        "all": "All roles",
+        "candidate": "Candidate",
+        "recruiter": "Recruiter",
+        "admin": "Admin"
+      },
+      "verifiedOptions": {
+        "all": "All statuses",
+        "verified": "Verified",
+        "notVerified": "Not verified"
+      },
+      "accountStatusOptions": {
+        "all": "All accounts",
+        "active": "Active",
+        "suspended": "Suspended"
+      },
+      "sortOptions": {
+        "newest": "Newest",
+        "oldest": "Oldest",
+        "nameAsc": "Name A-Z",
+        "nameDesc": "Name Z-A",
+        "emailAsc": "Email A-Z"
+      },
+      "filters": {
+        "title": "Filters",
+        "search": "Search",
+        "searchPlaceholder": "Name or email",
+        "role": "Role",
+        "verification": "Verification",
+        "sortBy": "Sort By",
+        "accountStatus": "Account Status"
+      },
+      "table": {
+        "user": "User",
+        "role": "Role",
+        "verification": "Verification",
+        "account": "Account",
+        "joined": "Joined",
+        "actions": "Actions",
+        "empty": "No users found for the selected filters."
+      },
+      "badges": {
+        "verified": "Verified",
+        "pending": "Pending",
+        "active": "Active",
+        "suspended": "Suspended"
+      },
+      "actions": {
+        "view": "View",
+        "verify": "Verify",
+        "editUser": "Edit User",
+        "suspend": "Suspend",
+        "unsuspend": "Unsuspend"
+      },
+      "pagination": {
+        "showing": "Showing {start}-{end} of {total} users",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page {page} / {totalPages}"
+      },
+      "suspendModal": {
+        "title": "Confirm Suspension",
+        "confirmText": "Are you sure you want to suspend <strong>{name}</strong>? This user will no longer be able to log in until unsuspended.",
+        "cancel": "Cancel",
+        "confirm": "Confirm Suspend"
+      },
+      "editModal": {
+        "title": "Edit User",
+        "subtitle": "Update profile details for <strong>{name}</strong>.",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "cancel": "Cancel",
+        "save": "Save Changes"
+      }
+    },
+    "userDetails": {
+      "backToUsers": "Back to users",
+      "errors": {
+        "load": "Unable to load user details.",
+        "notFound": "User details not found."
+      },
+      "badges": {
+        "active": "Active",
+        "suspended": "Suspended",
+        "verified": "Verified",
+        "notVerified": "Not verified",
+        "enabled": "Enabled",
+        "emailVerified": "Email Verified",
+        "pendingVerification": "Pending Verification",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "labels": {
+        "created": "Created",
+        "updated": "Updated",
+        "userId": "User ID",
+        "noPhone": "No phone",
+        "noAddress": "No address",
+        "profileType": "Profile Type",
+        "accountStatus": "Account Status",
+        "verification": "Verification",
+        "noData": "No data",
+        "updatedOn": "Updated {date}",
+        "userPhotoAlt": "User"
+      },
+      "profileTypes": {
+        "candidate": "Candidate",
+        "recruiter": "Recruiter",
+        "admin": "Admin"
+      },
+      "candidate": {
+        "title": "Candidate Profile",
+        "desiredPosition": "Desired Position",
+        "desiredSalary": "Desired Salary",
+        "openToWork": "Open To Work",
+        "professionalSummary": "Professional Summary",
+        "noSummary": "No summary",
+        "socialLinks": "Social Links",
+        "skills": "Skills",
+        "experiences": "Experiences",
+        "education": "Education",
+        "languages": "Languages",
+        "projects": "Projects",
+        "certifications": "Certifications"
+      },
+      "recruiter": {
+        "title": "Recruiter Profile",
+        "position": "Position",
+        "department": "Department",
+        "company": "Company",
+        "companyLogoAlt": "Company",
+        "industryNotSet": "Industry not set",
+        "phone": "Phone",
+        "size": "Size",
+        "address": "Address",
+        "description": "Description"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "tagline": "Pioneering AI-driven career matching to empower professionals and help businesses grow with the right talent.",
+    "share": "Share",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "product": {
+      "title": "Product",
+      "cvBuilder": "CV Builder",
+      "aiMatcher": "AI Matcher",
+      "jobSearch": "Job Search",
+      "companyReviews": "Company Reviews"
+    },
+    "company": {
+      "title": "Company",
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "pressKit": "Press Kit"
+    },
+    "newsletter": {
+      "title": "Subscribe to our Newsletter",
+      "description": "Get the latest career tips and AI updates.",
+      "emailPlaceholder": "Email address",
+      "subscribe": "Subscribe"
+    },
+    "copyright": "© {year} TalentBridge AI. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookies": "Cookies"
+  }
+}

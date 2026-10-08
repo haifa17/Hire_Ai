@@ -1,0 +1,316 @@
+{
+  "resumesEditor": {
+    "list": {
+      "title": "Mes CV",
+      "subtitle": "Gérez vos CV générés par l'IA, optimisés pour les ATS",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce CV ?",
+      "enhanceButton": "Améliorer votre CV",
+      "generateButton": "Générer un nouveau CV",
+      "empty": {
+        "title": "Aucun CV pour le moment",
+        "description": "Téléchargez un CV existant pour l'améliorer avec l'IA ou générez un nouveau CV sur mesure à partir de zéro.",
+        "enhanceButton": "Améliorer un CV existant",
+        "createButton": "Créer un nouveau CV"
+      },
+      "card": {
+        "language": "Langue : {language}",
+        "atsScore": "ATS {score}",
+        "atsPending": "ATS en attente",
+        "viewAndEdit": "Voir et modifier"
+      }
+    },
+    "create": {
+      "backToResumes": "Retour aux CV",
+      "title": "Générateur de CV par IA",
+      "subtitle": "Adaptez précisément votre CV à une offre d'emploi grâce à notre IA avancée. Notre système analyse votre profil et génère un CV optimisé pour les ATS, adapté à ce poste spécifique.",
+      "untitledResume": "CV sans titre",
+      "unknownCompany": "Entreprise inconnue",
+      "noJobSelected": "Aucune offre sélectionnée",
+      "manualJobDescription": "Description d'emploi manuelle",
+      "noDescriptionYet": "Aucune description pour le moment",
+      "stepper": {
+        "step1Label": "Étape 1",
+        "step1Title": "Générateur de CV par IA",
+        "step1Description": "Titre, langue et description du poste.",
+        "step2Label": "Étape 2",
+        "step2Title": "Sélection du modèle",
+        "step2Description": "Choisissez le style visuel du CV final."
+      },
+      "step1": {
+        "titleLabel": "Titre du CV (interne)",
+        "titlePlaceholder": "ex. Développeur Frontend Senior - Google",
+        "languageLabel": "Langue cible",
+        "languageEnglish": "Anglais",
+        "languageFrench": "Français",
+        "jobSourceTitle": "Choisissez la source de l'offre",
+        "jobSourceDescription": "Utilisez une offre déjà publiée sur la plateforme ou collez votre propre description de poste.",
+        "existingJob": "Offre existante",
+        "pasteDescription": "Coller une description",
+        "searchJobLabel": "Rechercher une offre publiée",
+        "searchJobPlaceholder": "Rechercher par titre, entreprise, lieu...",
+        "selectJobLabel": "Sélectionner une offre d'emploi",
+        "selectJobPlaceholder": "Sélectionnez une offre publiée",
+        "loadingJobs": "Chargement des offres publiées...",
+        "jobDescriptionPreviewLabel": "Aperçu de la description du poste",
+        "jobDescriptionPreviewPlaceholder": "Sélectionnez une offre pour prévisualiser la description structurée.",
+        "jobDescriptionLabel": "Description du poste ciblé",
+        "jobDescriptionHint": "Collez ici l'intégralité de la description du poste. Notre IA en extraira les mots-clés, exigences et responsabilités pour adapter parfaitement votre profil.",
+        "jobDescriptionPlaceholder": "Collez la description du poste ici...",
+        "cancel": "Annuler",
+        "continueButton": "Continuer vers le modèle"
+      },
+      "step2": {
+        "reviewTitle": "Vérification de l'étape 1",
+        "titleLabel": "Titre",
+        "languageLabel": "Langue",
+        "jobSourceLabel": "Source de l'offre",
+        "selectTemplateTitle": "Sélectionnez un modèle",
+        "selectTemplateDescription": "Le modèle sélectionné sera intégré au CV généré et utilisé par l'éditeur.",
+        "back": "Retour",
+        "generating": "Génération en cours... (cela peut prendre une minute)",
+        "generateButton": "Générer le CV"
+      }
+    },
+    "enhance": {
+      "backToResumes": "Retour aux CV",
+      "title": "Améliorez votre CV",
+      "subtitle": "Suivez notre assistant d'amélioration IA en 3 étapes : téléchargez votre CV, ciblez une offre d'emploi et générez un CV optimisé pour les ATS.",
+      "defaultTitle": "Amélioré - {name}",
+      "errors": {
+        "unsupportedFormat": "Format de fichier non pris en charge. Veuillez télécharger un fichier au format : JPEG, PNG, PDF, DOC, DOCX.",
+        "fileTooLarge": "La taille du fichier dépasse la limite de 10 Mo. Veuillez télécharger un fichier plus petit."
+      },
+      "stepper": {
+        "stepLabel": "Étape {number}",
+        "step1": { "title": "Télécharger le CV", "desc": "PDF, DOC, DOCX, PNG, JPEG" },
+        "step2": { "title": "Offre ciblée", "desc": "Sélectionner une offre ou coller un texte" },
+        "step3": { "title": "Modèle & Amélioration", "desc": "Style, langue et IA" }
+      },
+      "step1": {
+        "heading": "Télécharger le fichier CV existant",
+        "supportedFormats": "Formats pris en charge :",
+        "formatsList": "JPEG, PNG, PDF, DOC, DOCX",
+        "maxSize": "(taille max : 10 Mo)",
+        "dropzoneText": "Glissez-déposez votre CV ici, ou",
+        "browse": "parcourir",
+        "dropzoneHint": "Pris en charge : PDF, DOC, DOCX, PNG ou JPEG (jusqu'à 10 Mo)",
+        "fileSize": "{size} Mo • Fichier validé",
+        "readyForStep2": "Prêt pour l'étape 2",
+        "removeFile": "Retirer et changer de fichier",
+        "cancel": "Annuler",
+        "nextButton": "Suivant : Offre ciblée"
+      },
+      "step2": {
+        "heading": "Description du poste ciblé",
+        "description": "Sélectionnez une offre existante sur la plateforme ou collez un texte de description de poste.",
+        "platformJobOffer": "Offre de la plateforme",
+        "pasteJobDescription": "Coller une description",
+        "searchLabel": "Rechercher des offres publiées",
+        "searchPlaceholder": "Rechercher par intitulé de poste, entreprise, lieu...",
+        "selectLabel": "Sélectionner une offre publiée *",
+        "selectPlaceholder": "-- Choisissez une offre publiée --",
+        "companyFallback": "Entreprise",
+        "previewLabel": "Aperçu de la description structurée",
+        "manualLabel": "Description du poste ciblé *",
+        "manualPlaceholder": "Collez ici le texte complet de la description du poste...",
+        "back": "Retour",
+        "nextButton": "Suivant : Modèle et paramètres"
+      },
+      "step3": {
+        "heading": "Paramètres du CV et modèle visuel",
+        "description": "Configurez le titre interne, la langue cible et sélectionnez un modèle visuel de CV.",
+        "summaryTitle": "Résumé de l'assistant",
+        "fileLabel": "Fichier :",
+        "targetJobLabel": "Offre ciblée :",
+        "platformJobFallback": "Offre de la plateforme",
+        "pastedJobFallback": "Description collée",
+        "titleLabel": "Titre du CV (interne) *",
+        "titlePlaceholder": "ex. CV Développeur Senior amélioré",
+        "languageLabel": "Langue cible *",
+        "languageEnglish": "Anglais",
+        "languageFrench": "Français",
+        "templateLabel": "Choisissez un modèle visuel *",
+        "back": "Retour",
+        "enhancing": "Amélioration du CV par l'IA... (analyse du fichier et adaptation)",
+        "enhanceButton": "Améliorer le CV avec l'IA"
+      }
+    },
+    "editor": {
+      "exportFailed": "Échec de l'export",
+      "loadingTitle": "Chargement de votre CV",
+      "loadingSubtitle": "Préparation de votre éditeur premium...",
+      "openEditorPanel": "Ouvrir le panneau d'édition",
+      "resumeEditorLabel": "Éditeur de CV",
+      "clickToRename": "Cliquez pour renommer",
+      "atsScoreButton": "Score ATS",
+      "undo": "Annuler",
+      "redo": "Rétablir",
+      "exporting": "Export en cours…",
+      "exportPdf": "Exporter en PDF",
+      "save": "Enregistrer",
+      "saved": "Enregistré !",
+      "livePreview": "Aperçu en direct",
+      "a4Size": "A4 · 210 × 297 mm",
+      "live": "En direct",
+      "zoomOut": "Zoom arrière",
+      "zoomIn": "Zoom avant",
+      "fitToWidth": "Ajuster à la largeur",
+      "shortcutTip": "Astuce : utilisez {kbdZ} pour annuler, {kbdY} pour rétablir",
+      "wysiwygNote": "Ce que vous voyez est ce que vous obtenez · L'export PDF correspond à cet aperçu",
+      "editingSection": "Modification : {title}"
+    },
+    "atsScorePanel": {
+      "title": "Score ATS",
+      "subtitle": "Analyse de correspondance du CV",
+      "breakdown": {
+        "keywordMatch": "Correspondance des mots-clés",
+        "skillsMatch": "Correspondance des compétences",
+        "experienceRelevance": "Pertinence de l'expérience",
+        "formattingQuality": "Qualité de la mise en forme",
+        "educationMatch": "Correspondance de la formation"
+      },
+      "noScoreYet": {
+        "title": "Pas encore de score",
+        "description": "Le score ATS sera calculé automatiquement, ou vous pouvez le déclencher manuellement."
+      },
+      "optimizeCard": {
+        "badge": "Optimisation intelligente par IA",
+        "title": "Améliorer tout le CV avec les recommandations ATS",
+        "description": "Intégrez automatiquement les mots-clés manquants et corrigez les suggestions ATS dans votre résumé, vos compétences et vos expériences.",
+        "optimizing": "Optimisation complète du CV...",
+        "button": "✨ Optimiser tout le CV avec l'IA"
+      },
+      "overall": "Global",
+      "matchLevel": {
+        "strong": "Forte correspondance",
+        "needsRefinement": "À améliorer",
+        "atRisk": "À risque"
+      },
+      "breakdownTitle": "Détail",
+      "overallPercent": "{score}% au global",
+      "matchedKeywords": "Mots-clés trouvés",
+      "noMatchedKeywords": "Aucun mot-clé trouvé pour le moment.",
+      "missingKeywords": "Mots-clés manquants",
+      "noMissingKeywords": "Aucun mot-clé manquant identifié.",
+      "aiSuggestions": "Suggestions de l'IA",
+      "noSuggestions": "Aucune suggestion disponible.",
+      "rescoring": "Recalcul en cours…",
+      "rescore": "Recalculer"
+    },
+    "editorSidebar": {
+      "tabs": {
+        "header": "En-tête",
+        "style": "Style",
+        "photo": "Photo",
+        "sections": "Sections"
+      },
+      "defaultSectionTitle": "Section personnalisée",
+      "header": {
+        "fullName": "Nom complet",
+        "professionalTitle": "Titre professionnel",
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "alignment": "Alignement",
+        "alignmentDefault": "Par défaut (selon le modèle)",
+        "alignmentLeft": "Gauche",
+        "alignmentCenter": "Centre",
+        "alignmentRight": "Droite",
+        "socialLinks": "Liens sociaux",
+        "platformPlaceholder": "Plateforme",
+        "labelPlaceholder": "Libellé",
+        "urlPlaceholder": "URL",
+        "addSocialLink": "+ Ajouter un lien social"
+      },
+      "style": {
+        "colors": "Couleurs",
+        "primary": "Principale",
+        "accent": "Accent",
+        "text": "Texte",
+        "background": "Arrière-plan",
+        "typography": "Typographie",
+        "baseFont": "Taille de police ({size}px)",
+        "lineHeight": "Interligne ({value})",
+        "template": "Modèle"
+      },
+      "photo": {
+        "photoOnResume": "Photo sur le CV",
+        "enabledHint": "Activée · visible dans l'aperçu",
+        "disabledHint": "Désactivée · masquée dans l'aperçu",
+        "enableAria": "Activer la photo",
+        "disableAria": "Désactiver la photo",
+        "profileAlt": "Profil",
+        "upload": "Télécharger",
+        "useProfilePhoto": "Utiliser la photo de profil",
+        "size": "Taille de la photo ({size}px)",
+        "shape": "Forme",
+        "shapes": {
+          "square": "carré",
+          "rounded": "arrondi",
+          "circle": "cercle"
+        },
+        "position": "Position",
+        "positions": {
+          "left": "gauche",
+          "right": "droite"
+        }
+      },
+      "sections": {
+        "order": "Ordre",
+        "tip": "Astuce : sélectionnez une section ici, puis modifiez son contenu juste en dessous des onglets.",
+        "addNew": "Ajouter une nouvelle section",
+        "titlePlaceholder": "Titre",
+        "addSection": "Ajouter la section",
+        "types": {
+          "custom": "Personnalisée",
+          "summary": "Résumé",
+          "experience": "Expérience",
+          "education": "Formation",
+          "skills": "Compétences",
+          "projects": "Projets",
+          "certifications": "Certifications",
+          "languages": "Langues",
+          "socialLinks": "Liens sociaux"
+        }
+      }
+    },
+    "optimizeCvModal": {
+      "title": "Optimisation complète du CV terminée",
+      "subtitle": "Votre CV a été amélioré grâce aux recommandations ATS et aux mots-clés manquants",
+      "overviewLabel": "Aperçu de l'optimisation IA",
+      "integratedKeywords": "Mots-clés ATS manquants intégrés ({count})",
+      "keywordsBlended": "Les mots-clés ont été intégrés naturellement dans le résumé professionnel et les points clés.",
+      "enhancedSections": "Sections du CV améliorées",
+      "noteText": "<strong>Remarque :</strong> l'application de ces changements mettra à jour votre CV en direct dans l'éditeur. Vous pouvez à tout moment vérifier, ajuster ou annuler les modifications.",
+      "cancel": "Annuler",
+      "applyButton": "Appliquer les améliorations au CV"
+    },
+    "sectionEditor": {
+      "languagesTitle": "Langues",
+      "skillsTitle": "Compétences",
+      "languageNamePlaceholder": "Nom de la langue",
+      "skillNamePlaceholder": "Nom de la compétence",
+      "noLevel": "Aucun niveau",
+      "addItemPlaceholder": "Ajouter {title}...",
+      "add": "Ajouter",
+      "contentLabel": "Contenu",
+      "writeSomething": "Écrivez quelque chose...",
+      "bulletPoints": "Points clés",
+      "addBulletPlaceholder": "Ajouter un point...",
+      "sectionTitleLabel": "Titre de la section",
+      "skillLevels": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé",
+        "expert": "Expert"
+      },
+      "languageLevels": {
+        "native": "Langue maternelle",
+        "fluent": "Courant",
+        "advanced": "Avancé",
+        "intermediate": "Intermédiaire",
+        "basic": "Notions de base"
+      }
+    }
+  }
+}

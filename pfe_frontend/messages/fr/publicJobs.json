@@ -1,0 +1,149 @@
+{
+  "publicJobs": {
+    "list": {
+      "hero": {
+        "badge": "Offres en direct",
+        "title": "Explorez les opportunités"
+      },
+      "search": {
+        "titlePlaceholder": "Intitulé du poste, compétences ou entreprise...",
+        "locationPlaceholder": "Ville, pays ou télétravail...",
+        "button": "Rechercher"
+      },
+      "filtersBar": {
+        "active": "Recherche filtrée active",
+        "clear": "Effacer les filtres"
+      },
+      "sidebar": {
+        "title": "Filtres",
+        "reset": "Réinitialiser",
+        "jobType": "Type de contrat",
+        "workModel": "Mode de travail"
+      },
+      "results": {
+        "showing": "Affichage de {shown} sur {total} postes"
+      },
+      "sort": {
+        "label": "Trier :",
+        "newest": "Plus récentes",
+        "oldest": "Plus anciennes"
+      },
+      "error": {
+        "failedToLoad": "Impossible de charger les offres d'emploi. Veuillez réessayer."
+      },
+      "empty": {
+        "title": "Aucune offre correspondante",
+        "description": "Nous n'avons trouvé aucune offre publiée correspondant à vos critères. Essayez d'ajuster vos filtres.",
+        "clearButton": "Effacer les filtres de recherche"
+      },
+      "job": {
+        "unknownCompany": "Entreprise inconnue",
+        "locationSpecified": "Lieu non précisé",
+        "salaryNegotiable": "Salaire à négocier",
+        "viewDetails": "Voir l'offre",
+        "applyNow": "Postuler"
+      },
+      "pagination": {
+        "pageOf": "Page {page} sur {total} ({count, plural, one {# offre au total} other {# offres au total}})",
+        "previous": "Précédent",
+        "next": "Suivant"
+      },
+      "toast": {
+        "loginRequired": "Veuillez vous connecter pour postuler à cette offre."
+      },
+      "employmentType": {
+        "FULL_TIME": "Temps plein",
+        "PART_TIME": "Temps partiel",
+        "CONTRACT": "Contrat",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "INTERNSHIP": "Stage"
+      },
+      "workplaceType": {
+        "REMOTE": "Télétravail",
+        "HYBRID": "Hybride",
+        "ONSITE": "Sur site"
+      },
+      "time": {
+        "recently": "Récemment",
+        "justNow": "À l'instant",
+        "hoursAgo": "il y a {hours} h",
+        "daysAgo": "il y a {days} j"
+      }
+    },
+    "detail": {
+      "back": {
+        "toJobs": "Retour aux offres"
+      },
+      "badges": {
+        "urgent": "Urgent",
+        "featured": "En vedette"
+      },
+      "hero": {
+        "publishedOn": "Publiée le {date}",
+        "views": "{count, plural, one {# vue} other {# vues}}",
+        "applyNow": "Postuler"
+      },
+      "sections": {
+        "aboutRole": "À propos de ce poste",
+        "responsibilities": "Responsabilités",
+        "requirements": "Exigences",
+        "requiredSkills": "Compétences requises",
+        "languages": "Langues",
+        "benefits": "Avantages"
+      },
+      "deadline": {
+        "title": "Date limite de candidature",
+        "note": "Nous vous encourageons à postuler dès que possible, le processus de sélection étant en cours."
+      },
+      "sidebar": {
+        "quickFacts": "En bref",
+        "salary": "Salaire",
+        "employmentType": "Type de contrat",
+        "workplaceType": "Mode de travail",
+        "experienceLevel": "Niveau d'expérience",
+        "openings": "Postes à pourvoir",
+        "openingsValue": "{count, plural, one {# poste} other {# postes}}",
+        "applyNow": "Postuler"
+      },
+      "company": {
+        "title": "À propos de l'entreprise",
+        "size": "Taille : {count} employés"
+      },
+      "recruiter": {
+        "title": "Publiée par",
+        "defaultName": "Recruteur",
+        "contact": "Contacter le recruteur"
+      },
+      "notFound": {
+        "title": "Offre introuvable | TalentBridge AI",
+        "description": "Cette offre d'emploi n'existe plus."
+      },
+      "notSpecified": "Non précisé",
+      "unknownCompany": "Entreprise",
+      "employmentType": {
+        "FULL_TIME": "Temps plein",
+        "PART_TIME": "Temps partiel",
+        "CONTRACT": "Contrat",
+        "CDD": "CDD",
+        "CDI": "CDI",
+        "TEMPORARY": "Temporaire",
+        "INTERNSHIP": "Stage",
+        "FREELANCE": "Freelance"
+      },
+      "workplaceType": {
+        "ONSITE": "Sur site",
+        "HYBRID": "Hybride",
+        "REMOTE": "Télétravail"
+      },
+      "experienceLevel": {
+        "ENTRY": "Débutant",
+        "JUNIOR": "Junior",
+        "MID": "Intermédiaire",
+        "SENIOR": "Senior",
+        "LEAD": "Lead",
+        "EXECUTIVE": "Cadre dirigeant"
+      }
+    }
+  }
+}

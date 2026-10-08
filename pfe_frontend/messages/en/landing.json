@@ -1,0 +1,68 @@
+{
+  "landing": {
+    "hero": {
+      "badge": "AI Hiring Co-Pilot",
+      "titleLine1": "Stop Sending CVs.",
+      "titleLine2": "Start Getting Picked.",
+      "description": "TalentBridge AI analyzes every line of your profile, improves your positioning, and matches you to roles where your chances are truly high.",
+      "buildCv": "Build My AI CV",
+      "exploreJobs": "Explore Jobs",
+      "statCvsOptimized": "2.4M+ CVs optimized",
+      "statInterviewRate": "3.2x higher interview rate",
+      "card": {
+        "matchEngine": "Match Engine",
+        "live": "LIVE",
+        "role1": "Senior Frontend Engineer",
+        "role2": "Product Designer",
+        "role3": "Data Analyst",
+        "cvScan": "CV Scan",
+        "insights": "Insights",
+        "verified": "Verified"
+      }
+    },
+    "features": {
+      "badge": "Platform Features",
+      "titleLine1": "One Flow.",
+      "titleLine2": "From CV to Interview.",
+      "description": "Everything is orchestrated in one intelligent pipeline: optimize your profile, get scored in real time, and get matched to roles where you can win.",
+      "card1": {
+        "title": "AI CV Generation",
+        "description": "Generate a recruiter-ready CV in minutes with structured sections, impact language, and role-specific phrasing.",
+        "link": "Start building"
+      },
+      "card2": {
+        "title": "Live Compatibility Score",
+        "description": "Understand your strengths and gaps instantly with an adaptive score that updates while you refine your profile.",
+        "link": "See your score"
+      },
+      "card3": {
+        "title": "Smart Job Matching",
+        "description": "Skip the noise and focus on opportunities that match your profile, level, and career momentum.",
+        "link": "Explore matches"
+      }
+    },
+    "testimonials": {
+      "badge": "Wall of Love",
+      "titleLine1": "Trusted by people",
+      "titleLine2": "who move fast.",
+      "description": "Candidates win interviews faster, and recruiters reduce screening time with better-fit shortlists from day one.",
+      "quote1": "\"The platform rewrote my CV structure in a way recruiters actually respond to. I got 4 interviews in 10 days.\"",
+      "name1": "Sarah Jenkins",
+      "role1": "Product Manager",
+      "quote2": "\"Smart matching cut our manual triage in half. We now focus on interviewing, not filtering noisy applications.\"",
+      "name2": "Michael Chen",
+      "role2": "Head of HR",
+      "quote3": "\"The scoring feedback made my profile sharper every day. I stopped applying blindly and started targeting smarter.\"",
+      "name3": "Amine Lahcen",
+      "role3": "Data Analyst"
+    },
+    "cta": {
+      "badge": "Your next move starts now",
+      "titleLine1": "Build a profile recruiters",
+      "titleLine2": "cannot ignore.",
+      "description": "Join TalentBridge AI and generate your AI-optimized CV in minutes, then match to jobs with precision.",
+      "getStarted": "Get Started Free",
+      "browseJobs": "Browse Jobs"
+    }
+  }
+}

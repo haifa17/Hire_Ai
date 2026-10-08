@@ -1,0 +1,32 @@
+fastapi==0.139.2
+uvicorn==0.51.0
+pydantic==2.13.4
+requests==2.34.2
+python-dotenv==1.2.2
+pytest==9.1.1
+pytest-asyncio==1.4.0
+langgraph==1.2.9
+langsmith==0.10.5
+deepeval==4.2.2
+click==8.3.3
+qdrant-client==1.18.0
+SQLAlchemy==2.0.51
+alembic==1.18.5
+asyncpg==0.31.0
+redis==8.0.1
+celery==5.6.3
+sentence-transformers==5.6.0
+FlagEmbedding==1.4.0
+einops==0.8.1
+docling==2.113.0
+PyPDF2==3.0.1
+torch==2.13.0
+easyocr==1.7.2
+# Fuzzy string matching for the rule-based scorer. Imported at module level by
+# app/agents/matching/rule_based/{certifications,education,normalize}.py, so
+# the service cannot start without it — it was only ever present implicitly
+# through a local virtualenv.
+rapidfuzz==3.14.6
+# Required by FastAPI for multipart form uploads (resume enhancement, ATS file
+# scoring). Without it the service fails at startup.
+python-multipart==0.0.32

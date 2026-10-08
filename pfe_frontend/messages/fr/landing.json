@@ -1,0 +1,68 @@
+{
+  "landing": {
+    "hero": {
+      "badge": "Copilote IA de recrutement",
+      "titleLine1": "Arrêtez d'envoyer des CV.",
+      "titleLine2": "Commencez à être choisi.",
+      "description": "TalentBridge AI analyse chaque ligne de votre profil, améliore votre positionnement et vous met en relation avec les postes où vos chances sont réellement élevées.",
+      "buildCv": "Créer mon CV IA",
+      "exploreJobs": "Explorer les offres",
+      "statCvsOptimized": "Plus de 2,4M de CV optimisés",
+      "statInterviewRate": "Taux d'entretien 3,2x supérieur",
+      "card": {
+        "matchEngine": "Moteur de correspondance",
+        "live": "EN DIRECT",
+        "role1": "Ingénieur Frontend Senior",
+        "role2": "Product Designer",
+        "role3": "Analyste de données",
+        "cvScan": "Analyse du CV",
+        "insights": "Analyses",
+        "verified": "Vérifié"
+      }
+    },
+    "features": {
+      "badge": "Fonctionnalités de la plateforme",
+      "titleLine1": "Un seul parcours.",
+      "titleLine2": "Du CV à l'entretien.",
+      "description": "Tout est orchestré dans un pipeline intelligent unique : optimisez votre profil, obtenez un score en temps réel et trouvez les postes où vous pouvez réussir.",
+      "card1": {
+        "title": "Génération de CV par IA",
+        "description": "Générez un CV prêt pour les recruteurs en quelques minutes, avec des sections structurées, un langage percutant et des formulations adaptées au poste.",
+        "link": "Commencer"
+      },
+      "card2": {
+        "title": "Score de compatibilité en direct",
+        "description": "Comprenez instantanément vos points forts et vos lacunes grâce à un score adaptatif qui évolue pendant que vous affinez votre profil.",
+        "link": "Voir votre score"
+      },
+      "card3": {
+        "title": "Matching d'offres intelligent",
+        "description": "Ignorez le bruit et concentrez-vous sur les opportunités qui correspondent à votre profil, votre niveau et votre progression de carrière.",
+        "link": "Explorer les correspondances"
+      }
+    },
+    "testimonials": {
+      "badge": "Ils nous adorent",
+      "titleLine1": "La confiance de ceux",
+      "titleLine2": "qui vont vite.",
+      "description": "Les candidats décrochent des entretiens plus rapidement, et les recruteurs réduisent leur temps de tri grâce à des listes de candidats mieux ciblées dès le premier jour.",
+      "quote1": "« La plateforme a restructuré mon CV d'une manière à laquelle les recruteurs répondent vraiment. J'ai obtenu 4 entretiens en 10 jours. »",
+      "name1": "Sarah Jenkins",
+      "role1": "Chef de produit",
+      "quote2": "« Le matching intelligent a réduit de moitié notre tri manuel. Nous nous concentrons désormais sur les entretiens, pas sur le filtrage des candidatures non pertinentes. »",
+      "name2": "Michael Chen",
+      "role2": "Responsable RH",
+      "quote3": "« Les retours de score ont affiné mon profil chaque jour. J'ai arrêté de postuler à l'aveugle et j'ai commencé à cibler plus intelligemment. »",
+      "name3": "Amine Lahcen",
+      "role3": "Analyste de données"
+    },
+    "cta": {
+      "badge": "Votre prochaine étape commence maintenant",
+      "titleLine1": "Construisez un profil que les recruteurs",
+      "titleLine2": "ne peuvent pas ignorer.",
+      "description": "Rejoignez TalentBridge AI, générez votre CV optimisé par IA en quelques minutes, puis trouvez des offres avec précision.",
+      "getStarted": "Commencer gratuitement",
+      "browseJobs": "Parcourir les offres"
+    }
+  }
+}

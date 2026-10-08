@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Editor design tokens — used by the resume editor & template picker UI
+     (not the per-CV template themes, which stay data-driven per resume). */
+  --editor-primary: #2563eb;
+  --editor-primary-hover: #1d4ed8;
+  --editor-primary-soft: #eff6ff;
+  --editor-accent: #4f46e5;
+  --editor-success: #16a34a;
+  --editor-success-soft: #f0fdf4;
+  --editor-danger: #dc2626;
+  --editor-danger-soft: #fef2f2;
+  --editor-surface: #ffffff;
+  --editor-surface-muted: #f8fafc;
+  --editor-border: #e5e7eb;
+  --editor-text: #111827;
+  --editor-text-muted: #6b7280;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Tailwind v4 leaves buttons with the default arrow cursor. Restore the
+   pointer for anything clickable; kept in the base layer so utilities such as
+   `cursor-default` or `cursor-not-allowed` still win where they are used. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"],
+  [role="switch"],
+  summary,
+  select,
+  label[for],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="file"],
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+}
+
+/* Form controls -----------------------------------------------------------
+   The single look for text inputs, selects and textareas. Use these classes
+   instead of restyling a control in place; add only layout utilities next to
+   them (width, margins, `pl-9` for a leading icon). They sit in the
+   components layer so those utilities override them. */
+@layer components {
+  .form-input,
+  .form-select,
+  .form-textarea {
+    @apply w-full rounded-lg border border-gray-300 bg-white px-3 text-sm text-gray-900 transition-colors;
+    @apply placeholder:text-gray-400;
+    @apply focus:border-transparent focus:ring-2 focus:ring-blue-500 focus:outline-none;
+    @apply disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500;
+    font-family: inherit;
+  }
+
+  .form-input,
+  .form-select {
+    @apply h-10;
+  }
+
+  .form-textarea {
+    @apply py-2.5 leading-relaxed;
+  }
+
+  /* Same chevron on every select, instead of each browser's own arrow. */
+  .form-select {
+    @apply pr-9;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+  }
+
+  /* Invalid state: set `aria-invalid` on the control, or add the class. */
+  .form-control-error,
+  .form-input[aria-invalid="true"],
+  .form-select[aria-invalid="true"],
+  .form-textarea[aria-invalid="true"] {
+    @apply border-red-500 focus:ring-red-500;
+  }
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero-orb-left {
+  width: 20rem;
+  height: 20rem;
+  left: -4rem;
+  top: 3rem;
+  background: rgba(34, 211, 238, 0.35);
+}
+
+.hero-orb-right {
+  width: 18rem;
+  height: 18rem;
+  right: -3rem;
+  top: 5rem;
+  background: rgba(129, 140, 248, 0.35);
+}
+
+.hero-orb-bottom {
+  width: 22rem;
+  height: 22rem;
+  left: 38%;
+  bottom: -12rem;
+  background: rgba(45, 212, 191, 0.25);
+}
+
+.hero-gradient-text {
+  background: linear-gradient(90deg, #67e8f9, #a5b4fc 45%, #5eead4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: heroFadeUp 0.7s ease-out forwards;
+}
+
+.hero-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.hero-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.hero-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.hero-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.hero-float {
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+.hero-pulse-ring {
+  animation: heroPulse 2.8s ease-in-out infinite;
+}
+
+.hero-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 1)
+  );
+  animation: heroShimmer 2.2s linear infinite;
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes heroPulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: scale(1.02);
+    opacity: 0.65;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes heroShimmer {
+  0% {
+    filter: brightness(0.9);
+  }
+
+  50% {
+    filter: brightness(1.15);
+  }
+
+  100% {
+    filter: brightness(0.9);
+  }
+}

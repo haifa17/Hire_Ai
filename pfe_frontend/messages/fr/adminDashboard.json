@@ -1,0 +1,371 @@
+{
+  "adminDashboard": {
+    "overview": {
+      "loading": "Chargement du tableau de bord...",
+      "error": "Impossible de charger les statistiques du tableau de bord.",
+      "stats": {
+        "totalUsers": { "label": "Utilisateurs totaux", "subtext": "{candidates} candidats / {recruiters} recruteurs" },
+        "totalApplications": { "label": "Candidatures totales", "subtext": "{count} ce mois-ci" },
+        "aiCvsGenerated": { "label": "CV générés par l'IA", "subtext": "{count} CV sur la plateforme" },
+        "activeJobPosts": { "label": "Offres d'emploi actives", "subtext": "{count} offres au total" }
+      },
+      "platformGrowth": {
+        "title": "Croissance de la plateforme",
+        "subtitle": "Nouvelles inscriptions (6 derniers mois)"
+      },
+      "aiInsights": {
+        "title": "Aperçu de la plateforme",
+        "aiCvs": { "label": "CV générés par l'IA" },
+        "pendingReports": {
+          "label": "Signalements en attente",
+          "clear": "Aucun",
+          "needsAttention": "Nécessite une action",
+          "description": "{count} signalement(s) en attente"
+        },
+        "applications": {
+          "label": "Candidatures ce mois-ci",
+          "description": "{count} candidatures soumises ce mois-ci"
+        },
+        "viewFullMetrics": "Voir tous les signalements"
+      },
+      "alerts": {
+        "title": "Alertes système récentes",
+        "subtitle": "Signalements en attente nécessitant votre attention",
+        "viewAll": "Voir toutes les alertes",
+        "empty": "Aucune alerte en attente. Tout va bien.",
+        "table": {
+          "status": "Statut",
+          "details": "Détails de l'alerte",
+          "type": "Type",
+          "time": "Heure",
+          "actions": "Actions"
+        },
+        "status": {
+          "Pending": "En attente"
+        },
+        "action": "Examiner"
+      }
+    },
+    "jobsList": {
+      "title": "Toutes les offres d'emploi",
+      "subtitle": "Supervisez, mettez à jour et modérez toutes les offres d'emploi de la plateforme.",
+      "refresh": "Actualiser",
+      "confirmDelete": "Supprimer cette offre d'emploi ? Cette action ne peut être annulée qu'à partir des sauvegardes de la base de données.",
+      "toasts": {
+        "closeSuccess": "Offre d'emploi clôturée.",
+        "closeError": "Impossible de clôturer l'offre d'emploi.",
+        "deleteSuccess": "Offre d'emploi supprimée.",
+        "deleteError": "Impossible de supprimer l'offre d'emploi."
+      },
+      "empty": {
+        "title": "Aucune offre d'emploi trouvée",
+        "description": "Aucune offre d'emploi ne correspond aux filtres sélectionnés."
+      },
+      "viewMode": {
+        "table": "Tableau",
+        "cards": "Cartes"
+      },
+      "pagination": {
+        "summary": "Page {page} sur {totalPages} ({total} offres)",
+        "previous": "Précédent",
+        "next": "Suivant"
+      }
+    },
+    "jobDetails": {
+      "loading": "Chargement de l'offre d'emploi...",
+      "notFound": "Offre d'emploi introuvable.",
+      "posted": "Publiée le {date}",
+      "sections": {
+        "about": "À propos de ce poste",
+        "responsibilities": "Responsabilités",
+        "requirements": "Exigences",
+        "requiredSkills": "Compétences requises",
+        "preferredSkills": "Compétences souhaitées",
+        "languages": "Langues",
+        "benefits": "Avantages",
+        "applicationDeadline": "Date limite de candidature"
+      },
+      "footer": {
+        "stats": "Candidatures : {applications} • Vues : {views}",
+        "backToJobs": "Retour aux offres"
+      },
+      "aside": {
+        "companyLogoAlt": "Logo de l'entreprise",
+        "logoMissing": "📸 Logo non téléchargé",
+        "draftNotice": "Cette offre est actuellement un brouillon et n'est pas visible publiquement.",
+        "about": "À propos de {company}",
+        "postedBy": "Publiée par",
+        "recruiterFallback": "Recruteur",
+        "contact": "Contacter",
+        "keyDetails": "Informations clés",
+        "notSpecified": "Non spécifié",
+        "openings": "{count, plural, one {# poste} other {# postes}}"
+      }
+    },
+    "jobEdit": {
+      "loading": "Chargement de l'offre d'emploi...",
+      "notFound": "Offre d'emploi introuvable.",
+      "title": "Modifier l'offre d'emploi",
+      "subtitle": "Modifiez cette offre d'emploi en tant qu'administrateur."
+    },
+    "profile": {
+      "title": "Profil administrateur",
+      "subtitle": "Consultez et mettez à jour les informations de votre compte administrateur.",
+      "successMessage": "Profil mis à jour avec succès.",
+      "errors": {
+        "load": "Impossible de charger votre profil administrateur.",
+        "update": "Impossible de mettre à jour votre profil administrateur."
+      },
+      "sections": {
+        "personalInfo": "Informations personnelles",
+        "security": "Sécurité",
+        "adminNotes": "Notes administrateur"
+      },
+      "photo": {
+        "alt": "Avatar administrateur",
+        "placeholder": "Avatar",
+        "title": "Photo de profil",
+        "recommendedSize": "Taille recommandée : 400x400px",
+        "change": "Changer la photo"
+      },
+      "fields": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Adresse e-mail",
+        "phone": "Numéro de téléphone",
+        "phonePlaceholder": "+33 6 00 00 00 00",
+        "address": "Adresse",
+        "addressPlaceholder": "Ville, Pays"
+      },
+      "security": {
+        "passwordLabel": "Mot de passe",
+        "passwordHint": "Utilisez un mot de passe fort et mettez-le à jour régulièrement.",
+        "changePassword": "Changer le mot de passe"
+      },
+      "adminNotesText": "Gardez vos informations de compte à jour pour simplifier les notifications système et le reporting opérationnel.",
+      "saveButton": "Enregistrer les modifications"
+    },
+    "reports": {
+      "title": "Gestion des Signalements",
+      "subtitle": "Modérez les offres d'emploi signalées par les utilisateurs de la plateforme",
+      "countBadge": "{count, plural, one {# signalement} other {# signalements}}",
+      "loading": "Chargement des signalements...",
+      "jobNotFound": "Offre introuvable",
+      "jobDeleted": "Offre supprimée",
+      "errors": {
+        "list": "Impossible de charger la liste des signalements.",
+        "resolve": "Erreur lors de la résolution du signalement.",
+        "deleteJob": "Erreur lors de la suppression de l'offre d'emploi."
+      },
+      "messages": {
+        "resolveSuccess": "Le signalement a été marqué comme résolu.",
+        "deleteSuccess": "L'offre \"{title}\" a été supprimée et ses signalements ont été résolus."
+      },
+      "actions": {
+        "hide": "Masquer",
+        "clear": "Effacer",
+        "view": "Voir",
+        "viewJobTitle": "Voir l'offre d'emploi",
+        "resolve": "Résoudre",
+        "deleteJob": "Supprimer l'offre"
+      },
+      "filters": {
+        "statusLabel": "Statut :",
+        "typeLabel": "Type :",
+        "allStatuses": "Tous les statuts",
+        "allTypes": "Tous les types",
+        "dateLabel": "Date : {order}",
+        "newest": "Plus récent",
+        "oldest": "Plus ancien"
+      },
+      "status": {
+        "PENDING": "En attente",
+        "RESOLVED": "Résolu"
+      },
+      "types": {
+        "FRAUD": "Fraude",
+        "INCORRECT_INFO": "Info incorrecte",
+        "SPAM": "Spam",
+        "EXPIRED": "Expiré",
+        "INAPPROPRIATE_CONTENT": "Contenu inapproprié",
+        "OTHER": "Autre"
+      },
+      "empty": {
+        "title": "Aucun signalement trouvé",
+        "description": "Aucun signalement ne correspond à vos filtres actuels."
+      },
+      "table": {
+        "status": "Statut",
+        "jobOffer": "Offre d'emploi",
+        "reasonAndType": "Motif & Type",
+        "reportedBy": "Signalé par",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "pagination": {
+        "summary": "Page <strong>{page}</strong> sur <strong>{totalPages}</strong> ({total} au total)",
+        "previous": "Précédent",
+        "next": "Suivant"
+      },
+      "deleteModal": {
+        "title": "Confirmer la suppression",
+        "irreversible": "Action irréversible",
+        "confirmText": "Êtes-vous sûr de vouloir supprimer définitivement l'offre d'emploi <strong>\"{title}\"</strong> ? Tous les signalements associés à cette offre seront automatiquement marqués comme résolus.",
+        "cancel": "Annuler",
+        "confirm": "Oui, supprimer l'offre",
+        "deleting": "Suppression..."
+      }
+    },
+    "users": {
+      "title": "Gestion des utilisateurs",
+      "subtitle": "Surveillez les utilisateurs et filtrez par rôle, statut de vérification et activité.",
+      "totalUsers": "{count} utilisateurs",
+      "errors": {
+        "load": "Impossible de charger les utilisateurs. Veuillez réessayer.",
+        "verify": "Impossible de vérifier l'e-mail de l'utilisateur.",
+        "updateUser": "Impossible de mettre à jour l'utilisateur.",
+        "suspension": "Impossible de mettre à jour le statut de suspension du compte."
+      },
+      "roleOptions": {
+        "all": "Tous les rôles",
+        "candidate": "Candidat",
+        "recruiter": "Recruteur",
+        "admin": "Administrateur"
+      },
+      "verifiedOptions": {
+        "all": "Tous les statuts",
+        "verified": "Vérifié",
+        "notVerified": "Non vérifié"
+      },
+      "accountStatusOptions": {
+        "all": "Tous les comptes",
+        "active": "Actif",
+        "suspended": "Suspendu"
+      },
+      "sortOptions": {
+        "newest": "Plus récent",
+        "oldest": "Plus ancien",
+        "nameAsc": "Nom A-Z",
+        "nameDesc": "Nom Z-A",
+        "emailAsc": "E-mail A-Z"
+      },
+      "filters": {
+        "title": "Filtres",
+        "search": "Recherche",
+        "searchPlaceholder": "Nom ou e-mail",
+        "role": "Rôle",
+        "verification": "Vérification",
+        "sortBy": "Trier par",
+        "accountStatus": "Statut du compte"
+      },
+      "table": {
+        "user": "Utilisateur",
+        "role": "Rôle",
+        "verification": "Vérification",
+        "account": "Compte",
+        "joined": "Inscrit le",
+        "actions": "Actions",
+        "empty": "Aucun utilisateur trouvé pour les filtres sélectionnés."
+      },
+      "badges": {
+        "verified": "Vérifié",
+        "pending": "En attente",
+        "active": "Actif",
+        "suspended": "Suspendu"
+      },
+      "actions": {
+        "view": "Voir",
+        "verify": "Vérifier",
+        "editUser": "Modifier",
+        "suspend": "Suspendre",
+        "unsuspend": "Réactiver"
+      },
+      "pagination": {
+        "showing": "Affichage de {start} à {end} sur {total} utilisateurs",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "page": "Page {page} / {totalPages}"
+      },
+      "suspendModal": {
+        "title": "Confirmer la suspension",
+        "confirmText": "Êtes-vous sûr de vouloir suspendre <strong>{name}</strong> ? Cet utilisateur ne pourra plus se connecter tant qu'il n'aura pas été réactivé.",
+        "cancel": "Annuler",
+        "confirm": "Confirmer la suspension"
+      },
+      "editModal": {
+        "title": "Modifier l'utilisateur",
+        "subtitle": "Mettez à jour les informations de profil de <strong>{name}</strong>.",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "E-mail",
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "cancel": "Annuler",
+        "save": "Enregistrer les modifications"
+      }
+    },
+    "userDetails": {
+      "backToUsers": "Retour aux utilisateurs",
+      "errors": {
+        "load": "Impossible de charger les détails de l'utilisateur.",
+        "notFound": "Détails de l'utilisateur introuvables."
+      },
+      "badges": {
+        "active": "Actif",
+        "suspended": "Suspendu",
+        "verified": "Vérifié",
+        "notVerified": "Non vérifié",
+        "enabled": "Activé",
+        "emailVerified": "E-mail vérifié",
+        "pendingVerification": "Vérification en attente",
+        "yes": "Oui",
+        "no": "Non"
+      },
+      "labels": {
+        "created": "Créé le",
+        "updated": "Mis à jour le",
+        "userId": "ID utilisateur",
+        "noPhone": "Aucun téléphone",
+        "noAddress": "Aucune adresse",
+        "profileType": "Type de profil",
+        "accountStatus": "Statut du compte",
+        "verification": "Vérification",
+        "noData": "Aucune donnée",
+        "updatedOn": "Mis à jour le {date}",
+        "userPhotoAlt": "Utilisateur"
+      },
+      "profileTypes": {
+        "candidate": "Candidat",
+        "recruiter": "Recruteur",
+        "admin": "Administrateur"
+      },
+      "candidate": {
+        "title": "Profil du candidat",
+        "desiredPosition": "Poste souhaité",
+        "desiredSalary": "Salaire souhaité",
+        "openToWork": "Ouvert aux opportunités",
+        "professionalSummary": "Résumé professionnel",
+        "noSummary": "Aucun résumé",
+        "socialLinks": "Liens sociaux",
+        "skills": "Compétences",
+        "experiences": "Expériences",
+        "education": "Formation",
+        "languages": "Langues",
+        "projects": "Projets",
+        "certifications": "Certifications"
+      },
+      "recruiter": {
+        "title": "Profil du recruteur",
+        "position": "Poste",
+        "department": "Département",
+        "company": "Entreprise",
+        "companyLogoAlt": "Entreprise",
+        "industryNotSet": "Secteur non défini",
+        "phone": "Téléphone",
+        "size": "Taille",
+        "address": "Adresse",
+        "description": "Description"
+      }
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "resumesEditor": {
+    "list": {
+      "title": "My Resumes",
+      "subtitle": "Manage your ATS-friendly AI generated resumes",
+      "confirmDelete": "Are you sure you want to delete this resume?",
+      "enhanceButton": "Enhance Your Resume",
+      "generateButton": "Generate New Resume",
+      "empty": {
+        "title": "No resumes yet",
+        "description": "Upload an existing CV to enhance it with AI or generate a new tailored resume from scratch.",
+        "enhanceButton": "Enhance Existing Resume",
+        "createButton": "Create New Resume"
+      },
+      "card": {
+        "language": "Language: {language}",
+        "atsScore": "ATS {score}",
+        "atsPending": "ATS pending",
+        "viewAndEdit": "View & Edit"
+      }
+    },
+    "create": {
+      "backToResumes": "Back to Resumes",
+      "title": "AI Resume Generator",
+      "subtitle": "Tailor your resume precisely to a job description using our advanced AI. Our system reads your profile and generates an ATS-friendly resume optimized for this specific role.",
+      "untitledResume": "Untitled resume",
+      "unknownCompany": "Unknown company",
+      "noJobSelected": "No job selected",
+      "manualJobDescription": "Manual job description",
+      "noDescriptionYet": "No description yet",
+      "stepper": {
+        "step1Label": "Step 1",
+        "step1Title": "AI Resume Generator",
+        "step1Description": "Title, language, and job description.",
+        "step2Label": "Step 2",
+        "step2Title": "Template selection",
+        "step2Description": "Choose the visual style of the final CV."
+      },
+      "step1": {
+        "titleLabel": "Resume Title (Internal)",
+        "titlePlaceholder": "e.g. Senior Frontend Dev - Google",
+        "languageLabel": "Target Language",
+        "languageEnglish": "English",
+        "languageFrench": "French",
+        "jobSourceTitle": "Choose the job source",
+        "jobSourceDescription": "Use an existing published job from the platform or paste your own job description.",
+        "existingJob": "Existing job",
+        "pasteDescription": "Paste description",
+        "searchJobLabel": "Search a published job",
+        "searchJobPlaceholder": "Search by title, company, location...",
+        "selectJobLabel": "Select a job offer",
+        "selectJobPlaceholder": "Select a published job offer",
+        "loadingJobs": "Loading published job offers...",
+        "jobDescriptionPreviewLabel": "Job description preview",
+        "jobDescriptionPreviewPlaceholder": "Select a job offer to preview the structured description.",
+        "jobDescriptionLabel": "Target Job Description",
+        "jobDescriptionHint": "Paste the entire job description here. Our AI will extract the keywords, requirements, and responsibilities to tailor your profile perfectly.",
+        "jobDescriptionPlaceholder": "Paste job description here...",
+        "cancel": "Cancel",
+        "continueButton": "Continue to template"
+      },
+      "step2": {
+        "reviewTitle": "Review step 1",
+        "titleLabel": "Title",
+        "languageLabel": "Language",
+        "jobSourceLabel": "Job source",
+        "selectTemplateTitle": "Select a template",
+        "selectTemplateDescription": "The selected template will be embedded in the generated CV and used by the editor.",
+        "back": "Back",
+        "generating": "Generating Magic... (This may take a minute)",
+        "generateButton": "Generate Resume"
+      }
+    },
+    "enhance": {
+      "backToResumes": "Back to Resumes",
+      "title": "Enhance Your Resume",
+      "subtitle": "Follow our 3-step AI enhancement wizard: Upload your CV, target a job description, and generate an ATS-optimized resume.",
+      "defaultTitle": "Enhanced - {name}",
+      "errors": {
+        "unsupportedFormat": "Unsupported file format. Please upload a file with format: JPEG, PNG, PDF, DOC, DOCX.",
+        "fileTooLarge": "File size exceeds 10MB limit. Please upload a smaller file."
+      },
+      "stepper": {
+        "stepLabel": "Step {number}",
+        "step1": { "title": "Upload Resume", "desc": "PDF, DOC, DOCX, PNG, JPEG" },
+        "step2": { "title": "Target Job", "desc": "Select job or paste text" },
+        "step3": { "title": "Template & Enhance", "desc": "Style, language & AI" }
+      },
+      "step1": {
+        "heading": "Upload Existing Resume File",
+        "supportedFormats": "Supported formats:",
+        "formatsList": "JPEG, PNG, PDF, DOC, DOCX",
+        "maxSize": "(Max size: 10MB)",
+        "dropzoneText": "Drag & drop your CV file here, or",
+        "browse": "browse",
+        "dropzoneHint": "Supported: PDF, DOC, DOCX, PNG, or JPEG (up to 10MB)",
+        "fileSize": "{size} MB • File validated",
+        "readyForStep2": "Ready for step 2",
+        "removeFile": "Remove & change file",
+        "cancel": "Cancel",
+        "nextButton": "Next: Target Job"
+      },
+      "step2": {
+        "heading": "Target Job Description",
+        "description": "Select an existing job from the platform or paste a job description text.",
+        "platformJobOffer": "Platform Job Offer",
+        "pasteJobDescription": "Paste Job Description",
+        "searchLabel": "Search Published Jobs",
+        "searchPlaceholder": "Search by position title, company, location...",
+        "selectLabel": "Select Published Job Offer *",
+        "selectPlaceholder": "-- Choose a published job offer --",
+        "companyFallback": "Company",
+        "previewLabel": "Structured Job Description Preview",
+        "manualLabel": "Target Job Description *",
+        "manualPlaceholder": "Paste the full job description text here...",
+        "back": "Back",
+        "nextButton": "Next: Template & Settings"
+      },
+      "step3": {
+        "heading": "Resume Settings & Visual Template",
+        "description": "Configure internal title, target language, and select a visual resume template.",
+        "summaryTitle": "Wizard Summary",
+        "fileLabel": "File:",
+        "targetJobLabel": "Target Job:",
+        "platformJobFallback": "Platform Job",
+        "pastedJobFallback": "Pasted Job Description",
+        "titleLabel": "Resume Title (Internal) *",
+        "titlePlaceholder": "e.g. Enhanced Senior Dev Resume",
+        "languageLabel": "Target Language *",
+        "languageEnglish": "English",
+        "languageFrench": "French",
+        "templateLabel": "Choose Visual Template *",
+        "back": "Back",
+        "enhancing": "AI Enhancing Resume... (Parsing file & tailoring)",
+        "enhanceButton": "Enhance Resume with AI"
+      }
+    },
+    "editor": {
+      "exportFailed": "Export failed",
+      "loadingTitle": "Loading your resume",
+      "loadingSubtitle": "Preparing your premium editor...",
+      "openEditorPanel": "Open editor panel",
+      "resumeEditorLabel": "Resume Editor",
+      "clickToRename": "Click to rename",
+      "atsScoreButton": "ATS Score",
+      "undo": "Undo",
+      "redo": "Redo",
+      "exporting": "Exporting…",
+      "exportPdf": "Export PDF",
+      "save": "Save",
+      "saved": "Saved!",
+      "livePreview": "Live Preview",
+      "a4Size": "A4 · 210 × 297 mm",
+      "live": "Live",
+      "zoomOut": "Zoom out",
+      "zoomIn": "Zoom in",
+      "fitToWidth": "Fit to width",
+      "shortcutTip": "Tip: Use {kbdZ} to undo, {kbdY} to redo",
+      "wysiwygNote": "What you see is what you get · PDF export matches this preview",
+      "editingSection": "Editing: {title}"
+    },
+    "atsScorePanel": {
+      "title": "ATS Score",
+      "subtitle": "Resume match analysis",
+      "breakdown": {
+        "keywordMatch": "Keyword Match",
+        "skillsMatch": "Skills Match",
+        "experienceRelevance": "Experience Relevance",
+        "formattingQuality": "Formatting Quality",
+        "educationMatch": "Education Match"
+      },
+      "noScoreYet": {
+        "title": "No score yet",
+        "description": "The ATS score will be computed automatically, or you can trigger it manually."
+      },
+      "optimizeCard": {
+        "badge": "AI Smart Optimization",
+        "title": "Enhance entire CV with ATS Insights",
+        "description": "Automatically integrate missing keywords and fix ATS suggestions across your summary, skills, and work bullets.",
+        "optimizing": "Optimizing full CV...",
+        "button": "✨ Optimize Full CV with AI"
+      },
+      "overall": "Overall",
+      "matchLevel": {
+        "strong": "Strong match",
+        "needsRefinement": "Needs refinement",
+        "atRisk": "At risk"
+      },
+      "breakdownTitle": "Breakdown",
+      "overallPercent": "{score}% overall",
+      "matchedKeywords": "Matched keywords",
+      "noMatchedKeywords": "No keywords matched yet.",
+      "missingKeywords": "Missing keywords",
+      "noMissingKeywords": "No missing keywords identified.",
+      "aiSuggestions": "AI suggestions",
+      "noSuggestions": "No suggestions available.",
+      "rescoring": "Re-scoring…",
+      "rescore": "Re-score"
+    },
+    "editorSidebar": {
+      "tabs": {
+        "header": "Header",
+        "style": "Style",
+        "photo": "Photo",
+        "sections": "Sections"
+      },
+      "defaultSectionTitle": "Custom Section",
+      "header": {
+        "fullName": "Full Name",
+        "professionalTitle": "Professional Title",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "alignment": "Alignment",
+        "alignmentDefault": "Default (matches template)",
+        "alignmentLeft": "Left",
+        "alignmentCenter": "Center",
+        "alignmentRight": "Right",
+        "socialLinks": "Social Links",
+        "platformPlaceholder": "Platform",
+        "labelPlaceholder": "Label",
+        "urlPlaceholder": "URL",
+        "addSocialLink": "+ Add Social Link"
+      },
+      "style": {
+        "colors": "Colors",
+        "primary": "Primary",
+        "accent": "Accent",
+        "text": "Text",
+        "background": "Background",
+        "typography": "Typography",
+        "baseFont": "Base Font ({size}px)",
+        "lineHeight": "Line Height ({value})",
+        "template": "Template"
+      },
+      "photo": {
+        "photoOnResume": "Photo on resume",
+        "enabledHint": "Enabled · visible in the preview",
+        "disabledHint": "Disabled · hidden from the preview",
+        "enableAria": "Enable photo",
+        "disableAria": "Disable photo",
+        "profileAlt": "Profile",
+        "upload": "Upload",
+        "useProfilePhoto": "Use profile photo",
+        "size": "Photo Size ({size}px)",
+        "shape": "Shape",
+        "shapes": {
+          "square": "square",
+          "rounded": "rounded",
+          "circle": "circle"
+        },
+        "position": "Position",
+        "positions": {
+          "left": "left",
+          "right": "right"
+        }
+      },
+      "sections": {
+        "order": "Order",
+        "tip": "Tip: select a section here, then edit its content just below the tabs.",
+        "addNew": "Add New Section",
+        "titlePlaceholder": "Title",
+        "addSection": "Add Section",
+        "types": {
+          "custom": "Custom",
+          "summary": "Summary",
+          "experience": "Experience",
+          "education": "Education",
+          "skills": "Skills",
+          "projects": "Projects",
+          "certifications": "Certifications",
+          "languages": "Languages",
+          "socialLinks": "Social links"
+        }
+      }
+    },
+    "optimizeCvModal": {
+      "title": "Full CV Optimization Complete",
+      "subtitle": "Your resume was enhanced using ATS recommendations & missing keywords",
+      "overviewLabel": "AI Optimization Overview",
+      "integratedKeywords": "Integrated ATS Missing Keywords ({count})",
+      "keywordsBlended": "Keywords were naturally blended into professional summary and bullet points.",
+      "enhancedSections": "Enhanced CV Sections",
+      "noteText": "<strong>Note:</strong> Applying these changes will update your live CV in the editor. You can review, fine-tune, or undo any changes at any time.",
+      "cancel": "Cancel",
+      "applyButton": "Apply Improvements to CV"
+    },
+    "sectionEditor": {
+      "languagesTitle": "Languages",
+      "skillsTitle": "Skills",
+      "languageNamePlaceholder": "Language name",
+      "skillNamePlaceholder": "Skill name",
+      "noLevel": "No level",
+      "addItemPlaceholder": "Add {title}...",
+      "add": "Add",
+      "contentLabel": "Content",
+      "writeSomething": "Write something...",
+      "bulletPoints": "Bullet Points",
+      "addBulletPlaceholder": "Add bullet...",
+      "sectionTitleLabel": "Section Title",
+      "skillLevels": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "expert": "Expert"
+      },
+      "languageLevels": {
+        "native": "Native",
+        "fluent": "Fluent",
+        "advanced": "Advanced",
+        "intermediate": "Intermediate",
+        "basic": "Basic"
+      }
+    }
+  }
+}

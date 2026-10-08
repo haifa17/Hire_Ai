@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "jobs": "Offres",
+    "cvTemplates": "Modèles de CV",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "dashboard": "Tableau de bord",
+    "logIn": "Connexion",
+    "logOut": "Déconnexion",
+    "getStarted": "Commencer"
+  },
+  "footer": {},
+  "common": {}
+}

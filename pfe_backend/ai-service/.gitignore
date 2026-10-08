@@ -1,0 +1,9 @@
+
+# Environment variables — never commit (contains API keys, incl. LANGSMITH_API_KEY)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ESCO reference data (download separately, see data/esco/README.md)
+data/esco/*.csv

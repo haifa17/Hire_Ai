@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "tagline": "Pionnier du matching de carrières par IA pour donner du pouvoir aux professionnels et aider les entreprises à grandir avec les bons talents.",
+    "share": "Partager",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "product": {
+      "title": "Produit",
+      "cvBuilder": "Créateur de CV",
+      "aiMatcher": "Matching IA",
+      "jobSearch": "Recherche d'emploi",
+      "companyReviews": "Avis sur les entreprises"
+    },
+    "company": {
+      "title": "Entreprise",
+      "aboutUs": "À propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "pressKit": "Kit presse"
+    },
+    "newsletter": {
+      "title": "Abonnez-vous à notre newsletter",
+      "description": "Recevez les dernières astuces carrière et actualités IA.",
+      "emailPlaceholder": "Adresse e-mail",
+      "subscribe": "S'abonner"
+    },
+    "copyright": "© {year} TalentBridge AI. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookies": "Cookies"
+  }
+}

@@ -1,0 +1,52 @@
+# Keeps secrets, local virtualenvs and model caches out of the build context.
+# Anything listed here can never end up in an image layer.
+
+# Local virtualenv — dependencies are reinstalled from requirements.txt
+.venv
+venv
+env
+
+# Python build noise
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.mypy_cache
+.ruff_cache
+*.egg-info
+
+# Secrets — GROQ/NVIDIA/OPENROUTER/LangSmith keys are injected at runtime
+.env
+.env.*
+!.env.example
+
+# VCS and CI
+.git
+.gitignore
+.github
+
+# Tests and evaluation artefacts (run from the host, not from the image)
+tests
+.deepeval
+.deepeval-cache.json
+temp_test_run_data.json
+
+# Editor / OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.log
+tmp
+temp
+
+# Downloaded model caches — re-fetched into a named volume at runtime
+.cache
+models
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+docker-compose.yml

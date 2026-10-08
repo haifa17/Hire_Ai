@@ -1,0 +1,57 @@
+{
+  "dashboardShell": {
+    "nav": {
+      "candidate": {
+        "dashboard": "Tableau de bord",
+        "myProfile": "Mon profil",
+        "myResumes": "Mes CV",
+        "myInterviews": "Mes entretiens",
+        "jobSearch": "Recherche d'emploi",
+        "matchOffer": "Analyser une offre",
+        "aiRecommendations": "Recommandations IA",
+        "myApplications": "Mes candidatures",
+        "settings": "Paramètres"
+      },
+      "recruiter": {
+        "dashboard": "Tableau de bord",
+        "myProfile": "Mon profil",
+        "myJobs": "Mes offres d'emploi",
+        "interviews": "Entretiens",
+        "analytics": "Statistiques",
+        "settings": "Paramètres"
+      },
+      "admin": {
+        "dashboard": "Tableau de bord",
+        "myProfile": "Mon profil",
+        "userManagement": "Gestion des utilisateurs",
+        "jobListings": "Offres d'emploi",
+        "reportManagement": "Gestion des signalements"
+      }
+    },
+    "search": {
+      "adminPlaceholder": "Rechercher des statistiques, utilisateurs ou offres...",
+      "defaultPlaceholder": "Rechercher un poste, une entreprise..."
+    },
+    "userTitle": {
+      "headAdministrator": "Administrateur principal",
+      "recruiter": "Recruteur",
+      "candidate": "Candidat"
+    },
+    "sidebar": {
+      "expand": "Déployer la barre latérale",
+      "collapse": "Réduire la barre latérale",
+      "closeSidebar": "Fermer la barre latérale",
+      "toggleSidebar": "Basculer la barre latérale"
+    },
+    "actions": {
+      "generateNewCv": "Générer un nouveau CV",
+      "newReport": "Nouveau signalement"
+    },
+    "topbar": {
+      "notifications": "Notifications",
+      "messages": "Messages",
+      "signOut": "Déconnexion"
+    },
+    "avatarAlt": "avatar"
+  }
+}
